@@ -19,9 +19,7 @@ const Header = () => (
       </a>
       <nav className="nav-links">
         <a className="nav-link" href="#produto">Produto</a>
-        <a className="nav-link" href="#ar">AR Corporativa</a>
         <a className="nav-link" href="#infocomex">Infocomex</a>
-        <a className="nav-link" href="#planos">Planos</a>
         <a className="nav-link" href="#faq">FAQ</a>
       </nav>
       <div className="nav-cta">
@@ -150,8 +148,8 @@ const Hero = () => (
           Sua empresa nunca mais vai <span className="strike">perder o prazo</span> de um <span className="accent">certificado A1.</span>
         </h1>
         <p className="hero-sub">
-          Plataforma de gestão e emissão de certificados digitais A1 para empresas e contadores.
-          Centralize sua carteira, automatize renovações e emita pela <b>AR Infocomex/CertBloker</b> — sem deslocamento, sem token, sem planilha.
+          Plataforma de gestão de certificados digitais A1 para empresas e contadores.
+          Centralize sua carteira, automatize renovações e, quando precisar emitir, a <b>Infocomex</b> — nossa parceira AC credenciada ICP-Brasil — cuida de tudo.
         </p>
         <div className="hero-actions">
           <a href="#cta" className="btn btn-primary btn-lg">Agendar demonstração <I.arrow size={14}/></a>
