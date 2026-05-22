@@ -1,90 +1,62 @@
 // Features, Product tabs, Steps sections
 
-const PoweredByInfocomex = () => (
+const InforcomexPartner = () => (
   <section className="powered" id="infocomex">
     <div className="container">
       <div className="powered-grid">
         <div>
-          <div className="kicker">Tecnologia Infocomex</div>
-          <h2>Construído sobre 15 anos de experiência em certificação digital.</h2>
+          <div className="kicker">Parceria certificada</div>
+          <h2>Certificados emitidos pela Infocomex. Gerenciados pelo CertBlocker.</h2>
           <p>
-            O CertBloker é o braço de gestão corporativa da <b>Infocomex</b> — Autoridade Certificadora credenciada pelo
-            <b> SERPRO desde 2010</b> e parte da cadeia <b>ICP-Brasil</b>. Cada certificado emitido pela nossa plataforma
-            carrega a mesma validade jurídica e a mesma infraestrutura confiável que já atendeu milhares de empresas
-            em todo o Brasil.
+            O CertBlocker cuida do cofre criptografado, dos alertas, do controle de acesso e de toda a auditoria da sua carteira.
+            A emissão dos certificados A1 é realizada pela <b>Infocomex</b> — Autoridade Certificadora credenciada pelo
+            <b> SERPRO desde 2010</b> e parte da cadeia <b>ICP-Brasil</b> — com plena validade jurídica e infraestrutura 100% nacional.
           </p>
           <p style={{fontSize: 14, color: 'var(--ink-500)'}}>
             Central de atendimento <b style={{color: 'var(--navy-900)'}}>0800 047 1347</b> ·
             Unidades em Balneário Camboriú, Itajaí e Barra Velha (SC).
           </p>
-
-          <div className="powered-stats">
-            <div className="powered-stat">
-              <div className="num">15+</div>
-              <div className="lbl">anos como AC credenciada SERPRO</div>
-            </div>
-            <div className="powered-stat">
-              <div className="num">+50k</div>
-              <div className="lbl">certificados emitidos ICP-Brasil</div>
-            </div>
-            <div className="powered-stat">
-              <div className="num">99,9%</div>
-              <div className="lbl">disponibilidade dos serviços</div>
-            </div>
+          <div style={{marginTop: 28}}>
+            <a href="https://infocomex.com.br/" target="_blank" rel="noopener noreferrer" className="btn btn-royal btn-lg">
+              Conhecer a Infocomex <I.arrow size={14}/>
+            </a>
           </div>
         </div>
 
         <div className="credentials-stage">
           <h4>Credenciamentos &amp; cadeia de confiança</h4>
-          <h3>Nossas credenciais oficiais</h3>
+          <h3>Quem garante a emissão</h3>
 
           <div className="cred-row">
             <div className="cred-icon">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--royal-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2l9 4v6c0 4.6-3.6 8.7-9 10-5.4-1.3-9-5.4-9-10V6l9-4z"/>
-                <path d="M9 12l2 2 4-4"/>
-              </svg>
+              <img src="assets/serpro-logo.png" alt="Logo SERPRO — Serviço Federal de Processamento de Dados" style={{width: 42, height: 42, objectFit: 'contain'}}/>
             </div>
             <div>
               <p className="cred-title">SERPRO</p>
-              <p className="cred-sub">Autoridade Certificadora credenciada — Serviço Federal de Processamento de Dados, autoridade certificadora vinculada à União.</p>
+              <p className="cred-sub">Autoridade Certificadora credenciada — Serviço Federal de Processamento de Dados, vinculado à União.</p>
               <span className="cred-tag">Credenciada desde 2010</span>
             </div>
           </div>
 
           <div className="cred-row">
             <div className="cred-icon">
-              <svg viewBox="0 0 32 32" width="30" height="30">
-                <defs>
-                  <linearGradient id="icpFlag" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#1f9d3d"/>
-                    <stop offset="50%" stopColor="#f7d046"/>
-                    <stop offset="100%" stopColor="#3a72ff"/>
-                  </linearGradient>
-                </defs>
-                <path d="M16 5 L27 26 L5 26 Z" fill="url(#icpFlag)"/>
-                <path d="M16 5 L27 26 L5 26 Z" fill="none" stroke="rgba(255,255,255,0.3)" strokeWidth="1"/>
-              </svg>
+              <img src="assets/icp-logo.png" alt="Logo ICP-Brasil — Infraestrutura de Chaves Públicas Brasileira" style={{width: 42, height: 42, objectFit: 'contain'}}/>
             </div>
             <div>
               <p className="cred-title">ICP-Brasil</p>
-              <p className="cred-sub">Infraestrutura de Chaves Públicas Brasileira, sob regulamentação do ITI (Instituto Nacional de Tecnologia da Informação). Validade jurídica plena.</p>
+              <p className="cred-sub">Infraestrutura de Chaves Públicas Brasileira, sob regulamentação do ITI. Validade jurídica plena.</p>
               <span className="cred-tag">Cadeia oficial · MP 2.200-2</span>
             </div>
           </div>
 
           <div className="cred-row">
-            <div className="cred-icon">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--royal-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="4" width="18" height="16" rx="2"/>
-                <path d="M3 9h18M7 14h6M7 17h4"/>
-                <circle cx="17" cy="16" r="1.5" fill="var(--royal-400)" stroke="none"/>
-              </svg>
+            <div className="cred-icon" style={{width: 42, height: 42, borderRadius: 8, background: 'var(--bg-soft)', border: '1px solid var(--line)', display: 'grid', placeItems: 'center', fontSize: 11, fontWeight: 700, color: 'var(--ink-500)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', flexShrink: 0}}>
+              ic
             </div>
             <div>
-              <p className="cred-title">LGPD &amp; ISO 27001</p>
-              <p className="cred-sub">Aderência à Lei Geral de Proteção de Dados e práticas de segurança da informação no padrão ISO/IEC 27001. Dados hospedados em território nacional.</p>
-              <span className="cred-tag">Compliance contínuo</span>
+              <p className="cred-title">Infocomex</p>
+              <p className="cred-sub">Autoridade Certificadora parceira responsável pela emissão de todos os certificados A1 da plataforma.</p>
+              <span className="cred-tag">AC credenciada · 15+ anos</span>
             </div>
           </div>
         </div>
@@ -145,7 +117,7 @@ const Features = () => (
         <div className="feat-card">
           <div className="feat-icn"><I.refresh/></div>
           <h3 className="feat-title">Renovação automatizada</h3>
-          <p className="feat-desc">Da videoconferência à entrega, sem sair do sistema. Toda a renovação flui dentro da nossa AR — incluindo validação biométrica.</p>
+          <p className="feat-desc">Da solicitação à entrega, todo o fluxo é coordenado pela plataforma. A emissão é feita pela Infocomex, nossa parceira certificadora ICP-Brasil.</p>
         </div>
 
         <div className="feat-card">
@@ -181,13 +153,17 @@ const PRODUCT_TABS = [
     visual: 'carteira',
   },
   {
-    id: 'emissao',
-    label: 'Emissão A1',
-    icon: <I.signature/>,
-    title: 'Emita um novo A1 em minutos, sem sair do navegador',
-    desc: 'A emissão acontece dentro da plataforma, via nossa Autoridade de Registro. Videoconferência com validador credenciado, biometria facial e entrega direta no cofre.',
-    feats: ['Validação por videoconferência 100% remota', 'Verificação biométrica e documental automática', 'Entrega imediata no cofre — sem download de token'],
-    visual: 'emissao',
+    id: 'cofre',
+    label: 'Cofre',
+    icon: <I.lock/>,
+    title: 'Cofre criptografado para toda a sua carteira de A1',
+    desc: 'Cada certificado tem um único lugar de existência — com criptografia AES-256, acesso por permissão granular e log completo de cada uso. Sem arquivos .pfx espalhados em desktops.',
+    feats: [
+      'Criptografia AES-256 em repouso, TLS 1.3 em trânsito',
+      'Permissões por usuário, empresa ou departamento',
+      'Log auditável de cada acesso, download e assinatura',
+    ],
+    visual: 'cofre',
   },
   {
     id: 'automacao',
@@ -242,28 +218,30 @@ const ProductVisual = ({kind}) => {
       </div>
     </div>
   );
-  if (kind === 'emissao') return (
+  if (kind === 'cofre') return (
     <div className="preview-card">
-      <div style={{fontSize: 11, fontFamily: 'var(--font-mono)', color: 'var(--royal-600)', fontWeight: 600, marginBottom: 6}}>EMITIR CERTIFICADO A1 · ETAPA 3 DE 4</div>
-      <div style={{fontFamily: 'var(--font-display)', fontSize: 17, color: 'var(--navy-900)', fontWeight: 600, marginBottom: 14}}>Videoconferência de validação</div>
-      <div className="upload-zone" style={{padding: 18, background: 'var(--navy-900)', borderColor: 'transparent', color: 'white'}}>
-        <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 12}}>
-          <div style={{aspectRatio: '4/3', background: 'linear-gradient(135deg, #2a3a60, #1a2547)', borderRadius: 8, display: 'grid', placeItems: 'center', fontSize: 10, color: 'rgba(255,255,255,0.5)'}}>VALIDADOR</div>
-          <div style={{aspectRatio: '4/3', background: 'linear-gradient(135deg, #1f5bff, #3a72ff)', borderRadius: 8, display: 'grid', placeItems: 'center', fontSize: 10, color: 'white', fontWeight: 600}}>VOCÊ · AO VIVO</div>
+      <div style={{fontFamily: 'var(--font-display)', fontSize: 16, color: 'var(--navy-900)', fontWeight: 600, marginBottom: 16}}>Cofre · Aurora Construtora LTDA</div>
+      <div style={{display: 'flex', flexDirection: 'column', gap: 10}}>
+        <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 14px', background: 'var(--bg-soft)', borderRadius: 8, border: '1px solid var(--line)'}}>
+          <div style={{display: 'flex', alignItems: 'center', gap: 8, fontSize: 13}}>
+            <I.cert size={14}/> <span style={{fontWeight: 600}}>cert_Aurora_2025.pfx</span>
+          </div>
+          <span className="pill pill-ok" style={{fontSize: 11}}><span className="ddot"/>AES-256</span>
         </div>
-        <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 12, color: 'rgba(255,255,255,0.7)'}}>
-          <span style={{display: 'inline-flex', alignItems: 'center', gap: 6}}>
-            <span style={{width: 6, height: 6, borderRadius: 3, background: '#dc2626', display: 'inline-block'}}/>
-            REC · 02:14
-          </span>
-          <span>Biometria: <strong style={{color: '#10a37f'}}>Aprovada</strong></span>
+        <div style={{fontSize: 12, color: 'var(--ink-500)', borderTop: '1px solid var(--line)', paddingTop: 12}}>
+          <div style={{fontWeight: 600, color: 'var(--navy-900)', marginBottom: 8}}>Log de acessos</div>
+          <div style={{display: 'flex', flexDirection: 'column', gap: 6}}>
+            <div style={{display: 'flex', justifyContent: 'space-between'}}>
+              <span>Maria L. — assinou NF-e</span><span style={{fontFamily: 'var(--font-mono)', fontSize: 11}}>14:32</span>
+            </div>
+            <div style={{display: 'flex', justifyContent: 'space-between'}}>
+              <span>API → ERP Totvs — assinou</span><span style={{fontFamily: 'var(--font-mono)', fontSize: 11}}>14:29</span>
+            </div>
+            <div style={{display: 'flex', justifyContent: 'space-between'}}>
+              <span>João C. — visualizou</span><span style={{fontFamily: 'var(--font-mono)', fontSize: 11}}>13:51</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div style={{display: 'flex', gap: 8, marginTop: 14, fontSize: 12, color: 'var(--ink-500)'}}>
-        <span style={{padding: '4px 8px', background: 'var(--royal-50)', color: 'var(--royal-600)', borderRadius: 6, fontWeight: 600}}>✓ Documentos</span>
-        <span style={{padding: '4px 8px', background: 'var(--royal-50)', color: 'var(--royal-600)', borderRadius: 6, fontWeight: 600}}>✓ Identidade</span>
-        <span style={{padding: '4px 8px', background: 'var(--royal-600)', color: 'white', borderRadius: 6, fontWeight: 600}}>● Validação</span>
-        <span style={{padding: '4px 8px', background: 'var(--bg-soft)', color: 'var(--ink-500)', borderRadius: 6}}>Entrega</span>
       </div>
     </div>
   );
@@ -386,14 +364,14 @@ const Steps = () => (
         <div className="step">
           <div className="num">04 · Dia 5+</div>
           <h4>Primeira emissão</h4>
-          <p>Emita seu primeiro A1 pela nossa AR. A partir daqui, todo vencimento é resolvido sozinho.</p>
+          <p>Emita seu primeiro A1 via Infocomex, nossa parceira certificadora. A partir daqui, todo vencimento é resolvido sozinho.</p>
         </div>
       </div>
     </div>
   </section>
 );
 
-window.PoweredByInfocomex = PoweredByInfocomex;
+window.InforcomexPartner = InforcomexPartner;
 window.Features = Features;
 window.Product = Product;
 window.Steps = Steps;
