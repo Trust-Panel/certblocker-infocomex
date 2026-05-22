@@ -353,7 +353,7 @@ const Steps = () => (
         <div className="step">
           <div className="num">03</div>
           <h4>Usuários &amp; grupos</h4>
-          <p>Crie colaboradores, organize por grupos de departamento (Fiscal, Financeiro, Jurídico, Compras) e defina quais certificados cada grupo pode acessar.</p>
+          <p>Crie colaboradores, organize por grupos de departamento (Fiscal, Financeiro, Jurídico, Compras) e defina cirurgicamente quais certificados cada grupo pode acessar.</p>
         </div>
         <div className="step">
           <div className="num">04</div>
