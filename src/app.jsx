@@ -3,13 +3,11 @@ const App = () => (
   <>
     <Header/>
     <Hero/>
-    <PoweredByInfocomex/>
     <LogosStrip/>
     <Features/>
     <Product/>
-    <ArSection/>
     <Steps/>
-    <Pricing/>
+    <InforcomexPartner/>
     <FAQ/>
     <FinalCTA/>
     <Footer/>
