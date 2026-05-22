@@ -19,11 +19,11 @@ const Header = () => (
       </a>
       <nav className="nav-links">
         <a className="nav-link" href="#produto">Produto</a>
+        <a className="nav-link" href="#como-funciona">Como funciona</a>
         <a className="nav-link" href="#infocomex">Infocomex</a>
         <a className="nav-link" href="#faq">FAQ</a>
       </nav>
       <div className="nav-cta">
-        <a href="#" className="btn btn-ghost btn-sm">Entrar</a>
         <a href="#cta" className="btn btn-primary btn-sm">Falar com especialista <I.arrow size={14}/></a>
       </div>
     </div>

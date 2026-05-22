@@ -71,7 +71,7 @@ const Features = () => (
       <div className="section-head">
         <div className="kicker">Plataforma</div>
         <h2>Tudo o que sua empresa precisa para gerenciar certificados A1, em um único lugar.</h2>
-        <p>Acabe com o controle por planilha, e-mails perdidos e idas presenciais à AC. O CertBloker concentra emissão, armazenamento, renovação e auditoria em uma plataforma única — pronta para uso corporativo e escritórios contábeis.</p>
+        <p>Acabe com o controle por planilha e e-mails perdidos. O CertBloker concentra cofre seguro, alertas de vencimento, controle de acesso granular e auditoria imutável — em uma única plataforma corporativa pronta para TI, Contabilidade e Jurídico.</p>
       </div>
 
       <div className="features-grid">
@@ -115,9 +115,9 @@ const Features = () => (
         </div>
 
         <div className="feat-card">
-          <div className="feat-icn"><I.refresh/></div>
-          <h3 className="feat-title">Renovação automatizada</h3>
-          <p className="feat-desc">Da solicitação à entrega, todo o fluxo é coordenado pela plataforma. A emissão é feita pela Infocomex, nossa parceira certificadora ICP-Brasil.</p>
+          <div className="feat-icn"><I.shield/></div>
+          <h3 className="feat-title">Sem download no dispositivo</h3>
+          <p className="feat-desc">O certificado nunca é baixado para o computador do usuário. Toda operação acontece em ambiente cloud isolado, com rastreabilidade de ponta a ponta — zero risco de arquivo .pfx solto.</p>
         </div>
 
         <div className="feat-card">
@@ -129,7 +129,7 @@ const Features = () => (
         <div className="feat-card">
           <div className="feat-icn"><I.users/></div>
           <h3 className="feat-title">Multiempresa &amp; multiusuário</h3>
-          <p className="feat-desc">Pensado para escritórios contábeis: gerencie centenas de CNPJs, atribua responsáveis e segmente acessos por equipe ou cliente.</p>
+          <p className="feat-desc">Organize grupos por área (Fiscal, Financeiro, Jurídico, Compras) e defina exatamente quais certificados cada grupo pode acessar. Princípio do menor privilégio aplicado por padrão.</p>
         </div>
 
         <div className="feat-card">
@@ -306,7 +306,7 @@ const Product = () => {
         <div className="section-head">
           <div className="kicker">Por dentro da plataforma</div>
           <h2>Quatro pilares. Um único painel.</h2>
-          <p>Carteira, emissão, automação e API foram desenhadas para conversar entre si — cada certificado tem um único lugar de existência, do momento que é emitido até a expiração.</p>
+          <p>Carteira, cofre, alertas e API foram desenhados para conversar entre si — cada certificado tem um único lugar de existência, sempre protegido, sempre disponível.</p>
         </div>
 
         <div className="product-shell">
@@ -338,33 +338,38 @@ const Product = () => {
 };
 
 const Steps = () => (
-  <section className="block" style={{background: 'var(--bg)'}}>
+  <section className="block" id="como-funciona" style={{background: 'var(--bg)'}}>
     <div className="container">
       <div className="section-head">
-        <div className="kicker">Onboarding em 4 passos</div>
-        <h2>Da assinatura ao primeiro A1 emitido em menos de uma semana.</h2>
-        <p>Migração assistida com nosso time, sem interromper sua operação fiscal.</p>
+        <div className="kicker">Como funciona</div>
+        <h2>Implantação em 5 passos, sem consultoria paralela.</h2>
+        <p>Onboarding guiado pelo nosso time. Sua equipe opera com autonomia desde o primeiro dia.</p>
       </div>
       <div className="steps">
         <div className="step">
-          <div className="num">01 · Dia 1</div>
-          <h4>Diagnóstico</h4>
-          <p>Mapeamos sua carteira atual, sistemas conectados e responsáveis. Sem custo de setup.</p>
+          <div className="num">01</div>
+          <h4>Administrador principal</h4>
+          <p>Um usuário-chave (CEO, Diretor de TI, CFO ou Controller) é designado com perfil administrador e gerencia toda a plataforma institucionalmente.</p>
         </div>
         <div className="step">
-          <div className="num">02 · Dia 2</div>
-          <h4>Importação em lote</h4>
-          <p>Migramos todos os certificados vigentes para o cofre, preservando datas e responsáveis.</p>
+          <div className="num">02</div>
+          <h4>Cadastro dos certificados</h4>
+          <p>A plataforma apenas lê os certificados A1 em ambiente criptografado AES-256. O arquivo e a senha nunca são enviados ao servidor — ficam sempre sob seu controle.</p>
         </div>
         <div className="step">
-          <div className="num">03 · Dia 3–5</div>
-          <h4>Fluxos &amp; integrações</h4>
-          <p>Configuramos os alertas, integramos seu ERP e treinamos a equipe em uma sessão de 1h.</p>
+          <div className="num">03</div>
+          <h4>Usuários &amp; grupos</h4>
+          <p>Crie colaboradores, organize por grupos de departamento (Fiscal, Financeiro, Jurídico, Compras) e defina quais certificados cada grupo pode acessar.</p>
         </div>
         <div className="step">
-          <div className="num">04 · Dia 5+</div>
-          <h4>Primeira emissão</h4>
-          <p>Emita seu primeiro A1 via Infocomex, nossa parceira certificadora. A partir daqui, todo vencimento é resolvido sozinho.</p>
+          <div className="num">04</div>
+          <h4>Instalação do app</h4>
+          <p>Um app corporativo leve é instalado no computador do colaborador (Windows). Distribuição via GPO suportada para ambientes gerenciados.</p>
+        </div>
+        <div className="step">
+          <div className="num">05</div>
+          <h4>Login seguro &amp; uso controlado</h4>
+          <p>O colaborador autentica e o sistema libera apenas os certificados autorizados para seu grupo. Sem download. Sem arquivos soltos. Sem risco de vazamento.</p>
         </div>
       </div>
     </div>

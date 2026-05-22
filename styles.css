@@ -441,7 +441,7 @@ h1.hero-title .strike::after {
 }
 .credentials-stage h4 {
   font-family: var(--font-display); margin: 0 0 4px;
-  font-size: 13px; color: rgba(255,255,255,0.6); font-weight: 500;
+  font-size: 13px; color: rgba(255,255,255,0.75); font-weight: 500;
   text-transform: uppercase; letter-spacing: 0.1em;
   position: relative;
 }
@@ -462,7 +462,7 @@ h1.hero-title .strike::after {
   display: grid; place-items: center; flex-shrink: 0;
 }
 .cred-title { font-family: var(--font-display); font-size: 18px; font-weight: 600; color: white; margin: 0 0 2px; letter-spacing: -0.01em; }
-.cred-sub { font-size: 13px; color: rgba(255,255,255,0.62); margin: 0; line-height: 1.5; }
+.cred-sub { font-size: 13px; color: rgba(255,255,255,0.82); margin: 0; line-height: 1.5; }
 .cred-tag {
   display: inline-block; margin-top: 6px;
   font-size: 10.5px; font-family: var(--font-mono);
@@ -686,7 +686,7 @@ section.block { padding: 96px 0; position: relative; }
 
 /* steps section */
 .steps {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; counter-reset: step;
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; counter-reset: step;
 }
 .step {
   background: white; border: 1px solid var(--line); border-radius: var(--r-lg);
