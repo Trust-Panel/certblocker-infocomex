@@ -79,7 +79,7 @@ const Features = () => (
           <div>
             <div className="feat-icn"><I.bell/></div>
             <h3 className="feat-title">Alertas inteligentes de vencimento</h3>
-            <p className="feat-desc">Notificações por e-mail, WhatsApp e webhook em D-60, D-30, D-15 e D-1. Configure responsáveis distintos por empresa, departamento ou cliente.</p>
+            <p className="feat-desc">Notificações automáticas por e-mail com prazo configurável (D-30, D-15 e D-7). Dashboard consolidado com linha do tempo — seu time renova no momento certo, nunca antes, nunca depois.</p>
           </div>
           <div className="feat-visual">
             <div style={{display: 'flex', alignItems: 'center', gap: 10, fontSize: 12, color: 'rgba(255,255,255,0.7)', padding: '4px 0'}}>
@@ -89,12 +89,12 @@ const Features = () => (
             </div>
             <div style={{display: 'flex', alignItems: 'center', gap: 10, fontSize: 12, color: 'rgba(255,255,255,0.7)', padding: '4px 0'}}>
               <span style={{width: 8, height: 8, borderRadius: 4, background: '#5b8def'}}/>
-              <span style={{fontWeight: 600, color: 'white'}}>D-60</span>
+              <span style={{fontWeight: 600, color: 'white'}}>D-15</span>
               <span>Vidotti EIRELI — alerta ao contador</span>
             </div>
             <div style={{display: 'flex', alignItems: 'center', gap: 10, fontSize: 12, color: 'rgba(255,255,255,0.7)', padding: '4px 0'}}>
               <span style={{width: 8, height: 8, borderRadius: 4, background: '#dc2626'}}/>
-              <span style={{fontWeight: 600, color: 'white'}}>D-1</span>
+              <span style={{fontWeight: 600, color: 'white'}}>D-7</span>
               <span>Pereira Log — alerta a 3 destinatários</span>
             </div>
             <div style={{display: 'flex', alignItems: 'center', gap: 10, fontSize: 12, color: 'rgba(255,255,255,0.7)', padding: '4px 0'}}>
@@ -106,12 +106,6 @@ const Features = () => (
               webhook → ERP, Slack, Whatsapp Business
             </div>
           </div>
-        </div>
-
-        <div className="feat-card">
-          <div className="feat-icn"><I.lock/></div>
-          <h3 className="feat-title">Cofre criptografado</h3>
-          <p className="feat-desc">Certificados armazenados em cofre com criptografia AES-256, acesso por permissionamento granular e log completo de cada uso.</p>
         </div>
 
         <div className="feat-card">
@@ -170,7 +164,7 @@ const PRODUCT_TABS = [
     label: 'Automação',
     icon: <I.bolt/>,
     title: 'Renovações que se resolvem sozinhas',
-    desc: 'Defina o fluxo uma vez: D-60 dispara o alerta, D-30 abre o agendamento, D-7 emite e arquiva. Você só precisa aparecer para validar — o resto é nosso.',
+    desc: 'Defina o fluxo uma vez: D-30 dispara o alerta, D-15 abre o agendamento, D-7 coordena a emissão com a Infocomex. A partir daí, o certificado já está no cofre.',
     feats: ['Fluxos por empresa, departamento ou contrato', 'Agendamento automático com o cliente final', 'Pagamento e nota fiscal centralizados'],
     visual: 'automacao',
   },
