@@ -85,14 +85,6 @@ const Footer = () => (
             <div className="brand-name">Cert<span className="blok">Bloker</span></div>
           </a>
           <p className="foot-intro">Gestão inteligente de certificados digitais A1 — operada pela <a href="https://infocomex.com.br" target="_blank" rel="noopener" style={{color: 'var(--royal-600)', fontWeight: 600}}>Infocomex</a>, Autoridade Certificadora credenciada SERPRO desde 2010, sob a cadeia ICP-Brasil.</p>
-          <div style={{display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: 6}}>
-            <SerproSeal size="sm"/>
-            <IcpBrasilSeal size="sm"/>
-            <InfocomexBadge size="sm"/>
-          </div>
-          <div style={{fontSize: 12, color: 'var(--ink-500)', marginTop: 16}}>
-            Central 24h: <b style={{color: 'var(--navy-900)'}}>0800 047 1347</b>
-          </div>
         </div>
         <div>
           <h5>Produto</h5>
