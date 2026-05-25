@@ -1,13 +1,7 @@
 // Header + Hero with dashboard mock
 
 const Logo = ({size=36}) => (
-  <div className="brand-mark" style={{width: size, height: size}}>
-    <svg width={size*0.55} height={size*0.55} viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="4" y="10" width="16" height="11" rx="2.5"/>
-      <path d="M8 10V7a4 4 0 018 0v3"/>
-      <circle cx="12" cy="15.5" r="1.3" fill="white"/>
-    </svg>
-  </div>
+  <img src="assets/certbloker-logo.png" alt="CertBloker" style={{height: size, width: 'auto', display: 'block'}} />
 );
 
 const Header = () => (
@@ -15,7 +9,6 @@ const Header = () => (
     <div className="container nav-inner">
       <a href="#" className="brand">
         <Logo />
-        <div className="brand-name">Cert<span className="blok">Bloker</span></div>
       </a>
       <nav className="nav-links">
         <a className="nav-link" href="#produto">Produto</a>
