@@ -1,6 +1,6 @@
 // Header + Hero with dashboard mock
 
-const Logo = ({size=36}) => (
+const Logo = ({size=48}) => (
   <img src="assets/certbloker-logo.png" alt="CertBloker" style={{height: size, width: 'auto', display: 'block'}} />
 );
 
