@@ -103,9 +103,6 @@ const Features = () => (
               <span className="alert-badge" style={{background:'rgba(16,185,129,0.18)',color:'#34d399'}}>OK</span>
               <span className="alert-text">Aurora Construtora — em dia</span>
             </div>
-            <div className="feat-webhook">
-              <span>webhook</span> → ERP, Slack, WhatsApp Business
-            </div>
           </div>
         </div>
 
@@ -342,29 +339,38 @@ const Steps = () => (
       </div>
       <div className="steps">
         <div className="step">
+          <div className="step-icon"><I.building size={20}/></div>
           <div className="num">01</div>
           <h4>Administrador principal</h4>
-          <p>Um usuário-chave (CEO, Diretor de TI, CFO ou Controller) é designado com perfil administrador e gerencia toda a plataforma institucionalmente.</p>
+          <p>Um gestor-chave é designado como administrador e controla toda a plataforma institucionalmente.</p>
         </div>
+        <div className="step-connector"><I.arrow size={16}/></div>
         <div className="step">
+          <div className="step-icon"><I.cert size={20}/></div>
           <div className="num">02</div>
           <h4>Cadastro dos certificados</h4>
-          <p>A plataforma apenas lê os certificados A1 em ambiente criptografado AES-256. O arquivo e a senha nunca são enviados ao servidor — ficam sempre sob seu controle.</p>
+          <p>A plataforma lê os certificados A1 em AES-256. O arquivo e a senha nunca saem do seu controle.</p>
         </div>
+        <div className="step-connector"><I.arrow size={16}/></div>
         <div className="step">
+          <div className="step-icon"><I.users size={20}/></div>
           <div className="num">03</div>
           <h4>Usuários &amp; grupos</h4>
-          <p>Crie colaboradores, organize por grupos de departamento (Fiscal, Financeiro, Jurídico, Compras) e defina cirurgicamente quais certificados cada grupo pode acessar.</p>
+          <p>Crie colaboradores, organize por departamento e defina quais certificados cada grupo acessa.</p>
         </div>
+        <div className="step-connector"><I.arrow size={16}/></div>
         <div className="step">
+          <div className="step-icon"><I.cog size={20}/></div>
           <div className="num">04</div>
           <h4>Instalação do app</h4>
-          <p>Um app corporativo leve é instalado no computador do colaborador (Windows). Distribuição via GPO suportada para ambientes gerenciados.</p>
+          <p>Um app leve é instalado no Windows do colaborador. Distribuição via GPO para ambientes gerenciados.</p>
         </div>
+        <div className="step-connector"><I.arrow size={16}/></div>
         <div className="step">
+          <div className="step-icon"><I.lock size={20}/></div>
           <div className="num">05</div>
           <h4>Login seguro &amp; uso controlado</h4>
-          <p>O colaborador autentica e o sistema libera apenas os certificados autorizados para seu grupo. Sem download. Sem arquivos soltos. Sem risco de vazamento.</p>
+          <p>O sistema libera apenas os certificados do grupo. Sem download, sem arquivos soltos, sem vazamento.</p>
         </div>
       </div>
     </div>
