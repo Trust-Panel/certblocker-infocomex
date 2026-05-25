@@ -75,58 +75,59 @@ const Features = () => (
       </div>
 
       <div className="features-grid">
-        <div className="feat-card dark">
+        <div className="feat-card dark feat-hero">
           <div>
             <div className="feat-icn"><I.bell/></div>
             <h3 className="feat-title">Alertas inteligentes de vencimento</h3>
             <p className="feat-desc">Notificações automáticas por e-mail com prazo configurável (D-30, D-15 e D-7). Dashboard consolidado com linha do tempo — seu time renova no momento certo, nunca antes, nunca depois.</p>
           </div>
           <div className="feat-visual">
-            <div style={{display: 'flex', alignItems: 'center', gap: 10, fontSize: 12, color: 'rgba(255,255,255,0.7)', padding: '4px 0'}}>
-              <span style={{width: 8, height: 8, borderRadius: 4, background: '#f5a623'}}/>
-              <span style={{fontWeight: 600, color: 'white'}}>D-30</span>
-              <span>Mendes Contábil — alerta a Maria L.</span>
+            <div className="feat-visual-title">Painel de alertas</div>
+            <div className="feat-alert-row">
+              <span className="alert-dot" style={{background:'#f59e0b'}}/>
+              <span className="alert-badge" style={{background:'rgba(245,158,11,0.18)',color:'#fbbf24'}}>D-30</span>
+              <span className="alert-text">Mendes Contábil — alerta a Maria L.</span>
             </div>
-            <div style={{display: 'flex', alignItems: 'center', gap: 10, fontSize: 12, color: 'rgba(255,255,255,0.7)', padding: '4px 0'}}>
-              <span style={{width: 8, height: 8, borderRadius: 4, background: '#5b8def'}}/>
-              <span style={{fontWeight: 600, color: 'white'}}>D-15</span>
-              <span>Vidotti EIRELI — alerta ao contador</span>
+            <div className="feat-alert-row">
+              <span className="alert-dot" style={{background:'#5b8def'}}/>
+              <span className="alert-badge" style={{background:'rgba(91,141,239,0.18)',color:'#93b4f8'}}>D-15</span>
+              <span className="alert-text">Vidotti EIRELI — alerta ao contador</span>
             </div>
-            <div style={{display: 'flex', alignItems: 'center', gap: 10, fontSize: 12, color: 'rgba(255,255,255,0.7)', padding: '4px 0'}}>
-              <span style={{width: 8, height: 8, borderRadius: 4, background: '#dc2626'}}/>
-              <span style={{fontWeight: 600, color: 'white'}}>D-7</span>
-              <span>Pereira Log — alerta a 3 destinatários</span>
+            <div className="feat-alert-row">
+              <span className="alert-dot" style={{background:'#ef4444'}}/>
+              <span className="alert-badge" style={{background:'rgba(239,68,68,0.18)',color:'#f87171'}}>D-7</span>
+              <span className="alert-text">Pereira Log — alerta a 3 destinatários</span>
             </div>
-            <div style={{display: 'flex', alignItems: 'center', gap: 10, fontSize: 12, color: 'rgba(255,255,255,0.7)', padding: '4px 0'}}>
-              <span style={{width: 8, height: 8, borderRadius: 4, background: '#10a37f'}}/>
-              <span style={{fontWeight: 600, color: 'white'}}>OK</span>
-              <span>Aurora Construtora — em dia</span>
+            <div className="feat-alert-row">
+              <span className="alert-dot" style={{background:'#10b981'}}/>
+              <span className="alert-badge" style={{background:'rgba(16,185,129,0.18)',color:'#34d399'}}>OK</span>
+              <span className="alert-text">Aurora Construtora — em dia</span>
             </div>
-            <div style={{marginTop: 'auto', fontSize: 11, color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-mono)', borderTop: '1px dashed rgba(255,255,255,0.1)', paddingTop: 10}}>
-              webhook → ERP, Slack, Whatsapp Business
+            <div className="feat-webhook">
+              <span>webhook</span> → ERP, Slack, WhatsApp Business
             </div>
           </div>
         </div>
 
-        <div className="feat-card">
+        <div className="feat-card dark">
           <div className="feat-icn"><I.shield/></div>
           <h3 className="feat-title">Sem download no dispositivo</h3>
           <p className="feat-desc">O certificado nunca é baixado para o computador do usuário. Toda operação acontece em ambiente cloud isolado, com rastreabilidade de ponta a ponta — zero risco de arquivo .pfx solto.</p>
         </div>
 
-        <div className="feat-card">
+        <div className="feat-card dark">
           <div className="feat-icn"><I.api/></div>
           <h3 className="feat-title">API e integrações nativas</h3>
           <p className="feat-desc">Use seus certificados diretamente do nosso cofre via API REST. Integre com seu ERP, sistema de assinatura ou robô fiscal.</p>
         </div>
 
-        <div className="feat-card">
+        <div className="feat-card dark">
           <div className="feat-icn"><I.users/></div>
           <h3 className="feat-title">Multiempresa &amp; multiusuário</h3>
           <p className="feat-desc">Organize grupos por área (Fiscal, Financeiro, Jurídico, Compras) e defina exatamente quais certificados cada grupo pode acessar. Princípio do menor privilégio aplicado por padrão.</p>
         </div>
 
-        <div className="feat-card">
+        <div className="feat-card dark">
           <div className="feat-icn"><I.chart/></div>
           <h3 className="feat-title">Auditoria &amp; relatórios</h3>
           <p className="feat-desc">Trilha completa de quem emitiu, baixou, assinou ou revogou. Exporte relatórios prontos para LGPD, conformidade e clientes.</p>
