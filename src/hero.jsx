@@ -1,6 +1,6 @@
 // Header + Hero with dashboard mock
 
-const Logo = ({size=48}) => (
+const Logo = ({size=72}) => (
   <img src="assets/certbloker-logo.png" alt="CertBloker" style={{height: size, width: 'auto', display: 'block'}} />
 );
 
@@ -35,7 +35,7 @@ const DashboardMock = () => (
           <div className="mark">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.4"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M9 11V8a3 3 0 016 0v3"/></svg>
           </div>
-          <span>CertBloker</span>
+          <span>CertBlocker</span>
         </div>
         <div className="group-label">Geral</div>
         <a className="nav-item active"><I.chart className="icn"/> Dashboard</a>
@@ -138,11 +138,10 @@ const Hero = () => (
           <span>Tecnologia <strong>Infocomex</strong> · AC credenciada <strong>SERPRO</strong> desde 2010</span>
         </div>
         <h1 className="hero-title">
-          Sua empresa nunca mais vai <span className="strike">perder o prazo</span> de um <span className="accent">certificado A1.</span>
+          CertBlocker, a solução definitiva na gestão <span className="strike">centralizada</span>, controlada e monitorada de <span className="accent">certificados digitais A1.</span>
         </h1>
         <p className="hero-sub">
-          Plataforma de gestão de certificados digitais A1 para empresas e contadores.
-          Centralize sua carteira, automatize renovações e, quando precisar emitir, a <b>Infocomex</b> — nossa parceira AC credenciada ICP-Brasil — cuida de tudo.
+          Guarda centralizada de certificados A1 com controle de acesso por colaborador, conforme a política definida pelos gestores. Proteja-se do uso indevido sem comprometer a fluidez da sua empresa ou escritório contábil. E se precisar renovar ou emitir, a <b>Infocomex</b> cuida de tudo. São 27 anos de experiência, sendo 16 anos na ICP-Brasil.
         </p>
         <div className="hero-actions">
           <a href="#cta" className="btn btn-primary btn-lg">Agendar demonstração <I.arrow size={14}/></a>

@@ -181,12 +181,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 h1.hero-title {
   font-family: var(--font-display);
-  font-size: clamp(40px, 5vw, 60px);
-  line-height: 1.04;
+  font-size: clamp(28px, 3.2vw, 44px);
+  line-height: 1.1;
   letter-spacing: -0.025em;
   color: white;
   margin: 20px 0 22px;
-  font-weight: 700;
+  font-weight: 600;
   text-wrap: balance;
 }
 h1.hero-title .accent {
@@ -393,8 +393,8 @@ h1.hero-title .strike::after {
   color: rgba(255,255,255,0.9);
 }
 .trust-cell {
-  display: flex; align-items: center; gap: 10px;
-  padding: 4px 16px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+  padding: 6px 20px;
   font-size: 12.5px; color: rgba(190,210,255,0.82); line-height: 1.3;
 }
 .trust-row.inv .trust-cell { color: rgba(255,255,255,0.85); }
@@ -402,7 +402,7 @@ h1.hero-title .strike::after {
 .trust-row.inv .trust-cell svg { color: var(--royal-400); }
 .trust-cell b { font-weight: 600; color: white; }
 .trust-row.inv .trust-cell b { color: white; }
-.trust-cell-sub { color: var(--ink-500); font-size: 11px; }
+.trust-cell-sub { color: rgba(150,180,255,0.65); font-size: 11px; text-align: center; }
 .trust-row.inv .trust-cell-sub { color: rgba(255,255,255,0.55); }
 .trust-divider {
   width: 1px; background: var(--line-soft); margin: 6px 0;
