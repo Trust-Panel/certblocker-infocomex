@@ -113,12 +113,6 @@ const Features = () => (
         </div>
 
         <div className="feat-card dark">
-          <div className="feat-icn"><I.api/></div>
-          <h3 className="feat-title">API e integrações nativas</h3>
-          <p className="feat-desc">Use seus certificados diretamente do nosso cofre via API REST. Integre com seu ERP, sistema de assinatura ou robô fiscal.</p>
-        </div>
-
-        <div className="feat-card dark">
           <div className="feat-icn"><I.users/></div>
           <h3 className="feat-title">Multiempresa &amp; multiusuário</h3>
           <p className="feat-desc">Organize grupos por área (Fiscal, Financeiro, Jurídico, Compras) e defina exatamente quais certificados cada grupo pode acessar. Princípio do menor privilégio aplicado por padrão.</p>

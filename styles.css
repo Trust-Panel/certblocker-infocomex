@@ -575,7 +575,7 @@ section.block { padding: 96px 0; position: relative; }
   box-shadow: 0 8px 40px rgba(12,26,58,.35);
 }
 .feat-card.feat-hero {
-  grid-column: span 2;
+  grid-column: span 3;
   display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;
 }
 .feat-card.dark:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(12,26,58,.45); border-color: transparent; }
@@ -932,7 +932,7 @@ footer {
   .steps { flex-wrap: wrap; gap: 12px; }
   .steps .step { flex: 1 1 calc(50% - 20px); }
   .step-connector { display: none; }
-  .feat-card.feat-hero { grid-column: span 2; grid-template-columns: 1fr; }
+  .feat-card.feat-hero { grid-column: span 3; grid-template-columns: 1fr; }
   .logos-row { grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .nav-links { display: none; }
   .dash { transform: none; }
