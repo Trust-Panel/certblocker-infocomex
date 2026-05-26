@@ -81,8 +81,7 @@ const Footer = () => (
       <div className="foot-grid">
         <div>
           <a href="#" className="brand">
-            <Logo size={36}/>
-            <div className="brand-name">Cert<span className="blok">Bloker</span></div>
+            <Logo size={56}/>
           </a>
           <p className="foot-intro">Gestão inteligente de certificados digitais A1 — operada pela <a href="https://infocomex.com.br" target="_blank" rel="noopener" style={{color: 'var(--royal-600)', fontWeight: 600}}>Infocomex</a>, Autoridade Certificadora credenciada SERPRO desde 2010, sob a cadeia ICP-Brasil.</p>
         </div>
@@ -116,7 +115,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="foot-bottom">
-        <div>© 2026 CertBloker — uma marca Infocomex · CNPJ Infocomex · Balneário Camboriú, SC</div>
+        <div>© 2026 CertBlocker — Todos os direitos reservados</div>
         <div style={{display: 'flex', gap: 18}}>
           <a href="#">Privacidade</a>
           <a href="#">Termos</a>
