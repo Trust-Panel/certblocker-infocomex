@@ -7,7 +7,7 @@ const App = () => (
     <Steps/>
     <InforcomexPartner/>
     <FAQ/>
-    <FinalCTA/>
+    <ContactSection/>
     <Footer/>
   </>
 );

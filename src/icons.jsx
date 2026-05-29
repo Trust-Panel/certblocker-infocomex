@@ -121,6 +121,23 @@ const I = {
       <path d="M3 21h18"/>
     </svg>
   ),
+  mail: (p) => (
+    <svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="M3 7.5l9 6 9-6"/>
+    </svg>
+  ),
+  phone: (p) => (
+    <svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <path d="M5 4h3.5l1.6 4.2-2.1 1.4a11.5 11.5 0 005.4 5.4l1.4-2.1L19 16v3.5a1.5 1.5 0 01-1.6 1.5A16.5 16.5 0 013 5.6 1.5 1.5 0 014.5 4z"/>
+    </svg>
+  ),
+  clock: (p) => (
+    <svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M12 7.5V12l3 2"/>
+    </svg>
+  ),
 };
 
 window.I = I;
