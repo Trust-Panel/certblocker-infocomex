@@ -138,10 +138,10 @@ const Hero = () => (
           <span>Tecnologia <strong>Infocomex</strong> · AC credenciada <strong>SERPRO</strong> desde 2010</span>
         </div>
         <h1 className="hero-title">
-          CertBlocker, a solução definitiva na gestão <span className="strike">centralizada</span>, controlada e monitorada de <span className="accent">certificados digitais A1.</span>
+          A solução definitiva na gestão centralizada dos seus <span className="accent">certificados digitais A1.</span>
         </h1>
         <p className="hero-sub">
-          Guarda centralizada de certificados A1 com controle de acesso por colaborador, conforme a política definida pelos gestores. Proteja-se do uso indevido sem comprometer a fluidez da sua empresa ou escritório contábil. E se precisar renovar ou emitir, a <b>Infocomex</b> cuida de tudo. São 27 anos de experiência, sendo 16 anos na ICP-Brasil.
+          Centralize os certificados A1 da sua empresa em um cofre seguro, com controle de acesso por colaborador. E se precisar emitir ou renovar, a <b>Infocomex</b> , AC credenciada SERPRO desde 2010, cuida de tudo.
         </p>
         <div className="hero-actions">
           <a href="#cta" className="btn btn-primary btn-lg">Agendar demonstração <I.arrow size={14}/></a>
