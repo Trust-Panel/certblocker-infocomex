@@ -2,32 +2,24 @@
 
 const FAQS = [
   {
-    q: 'Quem está por trás do CertBloker?',
-    a: 'O CertBloker é uma plataforma independente de gestão de certificados digitais A1. A emissão dos certificados é realizada pela Infocomex — Autoridade Certificadora credenciada pelo SERPRO desde 2010, parte da cadeia ICP-Brasil. O CertBloker cuida do cofre, alertas, automação e integrações; a Infocomex garante a emissão com validade jurídica plena.',
+    q: 'Qual tecnologia está por trás da plataforma CertBlocker?',
+    a: 'O CertBlocker é desenvolvido sobre a tecnologia da TrustPanel, plataforma especializada em gestão de certificados digitais. A emissão dos certificados A1 é realizada pela Infocomex, Autoridade Certificadora credenciada pelo SERPRO desde 2010, parte da cadeia ICP-Brasil. O CertBlocker concentra cofre, alertas, auditoria e integrações; a Infocomex garante a emissão com plena validade jurídica.',
   },
   {
-    q: 'O CertBloker é uma Autoridade Certificadora (AC)?',
-    a: 'Não. O CertBloker é uma plataforma de gestão — não é AC nem AR. A Autoridade Certificadora responsável pela emissão é a Infocomex, credenciada pelo SERPRO e parte da cadeia ICP-Brasil. O CertBloker integra com a Infocomex para que você possa solicitar, renovar e gerenciar certificados A1 em um único lugar.',
+    q: 'Minha carteira de certificados está protegida dentro da plataforma?',
+    a: 'Sim. A plataforma realiza apenas a leitura dos certificados A1 em ambiente criptografado AES-256 — o mesmo padrão usado por bancos e instituições financeiras. O arquivo e a senha nunca são enviados nem armazenados em nossos servidores, e os certificados também nunca são baixados na máquina do colaborador. Toda operação acontece com rastreabilidade ponta-a-ponta.',
   },
   {
-    q: 'Preciso instalar o certificado no meu computador?',
-    a: 'Não. O A1 emitido pelo CertBloker fica armazenado no cofre criptografado da plataforma. Você pode usá-lo via painel, instalá-lo localmente quando precisar, ou consumi-lo direto via API a partir do seu ERP ou sistema fiscal.',
+    q: 'Como é feito o controle de quem pode usar cada certificado?',
+    a: 'Você organiza seus colaboradores em grupos por área (Fiscal, Financeiro, Jurídico, Compras etc.) e define quais certificados cada grupo pode visualizar e utilizar. O acesso segue o princípio do menor privilégio: ninguém vê nem usa certificados fora do seu grupo. Alterações de permissão ficam registradas na trilha de auditoria.',
   },
   {
-    q: 'A emissão por videoconferência tem validade jurídica?',
-    a: 'Sim. O processo de emissão por videoconferência é conduzido pela Infocomex, seguindo a Instrução Normativa do ITI, a MP 951 e a Resolução 170. Como AC credenciada SERPRO, a Infocomex mantém registro audiovisual e biometria conforme exigido pela cadeia ICP-Brasil. O CertBloker coordena o agendamento e entrega o certificado diretamente no cofre após a emissão.',
+    q: 'A plataforma é compatível com Windows?',
+    a: 'Sim, é compatível com Windows. Não há suporte a macOS ou Linux neste momento.',
   },
   {
-    q: 'Posso migrar certificados que já tenho?',
-    a: 'Sim. Importamos sua carteira atual sem custo na contratação — basta nos enviar os .pfx existentes, ou usar a importação em lote do painel. As datas de vencimento e responsáveis são preservados.',
-  },
-  {
-    q: 'Como funciona o white-label para escritórios contábeis?',
-    a: 'Escritórios contábeis e revendas parceiras podem operar a plataforma sob marca própria — domínio, logo, comunicações e relatórios personalizados. O comissionamento por emissão é definido em contrato com a Infocomex. Entre em contato com nossa equipe para saber mais.',
-  },
-  {
-    q: 'Os dados ficam no Brasil?',
-    a: 'Sim. Toda a infraestrutura, incluindo o cofre de certificados, está hospedada em datacenters em território nacional, com criptografia AES-256 em repouso e TLS 1.3 em trânsito. Estamos em conformidade com LGPD, ISO 27001 e requisitos do SERPRO.',
+    q: 'O CertBlocker está adequado à LGPD?',
+    a: 'Sim. O CertBlocker foi desenvolvido em total conformidade com a Lei Geral de Proteção de Dados. Todos os dados são tratados com segurança, transparência e respeito à privacidade dos usuários, com contratos e DPAs disponíveis sob demanda.',
   },
 ];
 
@@ -58,22 +50,94 @@ const FAQ = () => {
   );
 };
 
-const FinalCTA = () => (
-  <section className="block" id="cta">
-    <div className="container">
-      <div className="cta-block">
-        <div>
-          <h2 className="text-balance">Pronto para parar de perder o sono com vencimento de A1?</h2>
-          <p>Agende uma demonstração de 20 minutos com nosso time. Mostramos o painel ao vivo, com a sua carteira simulada, e respondemos qualquer dúvida sobre AR, white-label e integração.</p>
-        </div>
-        <div className="cta-actions">
-          <a href="#" className="btn btn-royal btn-lg">Agendar demonstração <I.arrow size={14}/></a>
-          <a href="#" className="btn btn-outline btn-lg" style={{background: 'transparent', color: 'white', boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.25)'}}>Falar no WhatsApp</a>
+// Dados de contato — edite aqui para atualizar os cards da seção.
+const CONTACT = {
+  email: 'comercial@certbloker.com.br',
+  emailNote: 'Resposta em até 2h úteis',
+  whatsapp: '(66) 99262-3898',
+  whatsappNote: 'Atendimento dedicado',
+  hours: 'Segunda a Sexta — 8h às 18h (Brasília)',
+};
+
+const ContactSection = () => {
+  // Somente visual por enquanto. Para ligar ao WhatsApp/backend depois,
+  // troque o preventDefault por um window.open(`https://wa.me/55...`) ou um POST.
+  const handleSubmit = (e) => { e.preventDefault(); };
+
+  return (
+    <section className="block contact" id="contato">
+      <div className="container">
+        <div className="contact-grid">
+          {/* Coluna esquerda — convite + contatos */}
+          <div className="contact-intro">
+            <div className="kicker">— Contato comercial</div>
+            <h2 className="text-balance">Vamos transformar a gestão de A1 da sua empresa.</h2>
+            <p>Fale com nosso time e veja em 20 minutos como reduzir risco operacional, eliminar multas e devolver tempo para TI, Contabilidade e Jurídico.</p>
+
+            <div className="contact-cards">
+              <div className="contact-card">
+                <div className="contact-card-icn"><I.mail/></div>
+                <div className="contact-card-body">
+                  <h4>E-mail</h4>
+                  <a href={`mailto:${CONTACT.email}`} className="contact-card-value">{CONTACT.email}</a>
+                  <span className="contact-card-sub">{CONTACT.emailNote}</span>
+                </div>
+              </div>
+              <div className="contact-card">
+                <div className="contact-card-icn"><I.phone/></div>
+                <div className="contact-card-body">
+                  <h4>WhatsApp comercial</h4>
+                  <span className="contact-card-value">{CONTACT.whatsapp}</span>
+                  <span className="contact-card-sub">{CONTACT.whatsappNote}</span>
+                </div>
+              </div>
+              <div className="contact-card">
+                <div className="contact-card-icn"><I.clock/></div>
+                <div className="contact-card-body">
+                  <h4>Horário institucional</h4>
+                  <span className="contact-card-value">{CONTACT.hours}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Coluna direita — card de formulário (visual) */}
+          <div className="contact-form">
+            <h3>Solicite uma demonstração</h3>
+            <p className="contact-form-sub">Preencha e retornaremos em até 2 horas úteis.</p>
+
+            <form onSubmit={handleSubmit}>
+              <div className="field">
+                <label htmlFor="cf-empresa">Empresa</label>
+                <input id="cf-empresa" type="text" placeholder="Razão social"/>
+              </div>
+              <div className="field">
+                <label htmlFor="cf-nome">Nome completo</label>
+                <input id="cf-nome" type="text" placeholder="Seu nome"/>
+              </div>
+              <div className="field">
+                <label htmlFor="cf-email">E-mail corporativo</label>
+                <input id="cf-email" type="email" placeholder="nome@empresa.com.br"/>
+              </div>
+              <div className="field">
+                <label htmlFor="cf-msg">Mensagem</label>
+                <textarea id="cf-msg" rows={4} placeholder="Conte-nos sobre o contexto da sua empresa..."/>
+              </div>
+
+              <button type="submit" className="btn btn-royal btn-lg contact-submit">
+                Solicitar demonstração <I.arrow size={14}/>
+              </button>
+            </form>
+
+            <div className="contact-form-foot">
+              <I.lock size={13}/> Dados protegidos pela LGPD
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 const Footer = () => (
   <footer>
@@ -86,21 +150,12 @@ const Footer = () => (
           <p className="foot-intro">Gestão inteligente de certificados digitais A1 — operada pela <a href="https://infocomex.com.br" target="_blank" rel="noopener" style={{color: 'var(--royal-600)', fontWeight: 600}}>Infocomex</a>, Autoridade Certificadora credenciada SERPRO desde 2010, sob a cadeia ICP-Brasil.</p>
         </div>
         <div>
-          <h5>Produto</h5>
+          <h5>Navegação</h5>
           <ul>
-            <li><a href="#produto">Plataforma</a></li>
-            <li><a href="#infocomex">Parceria Infocomex</a></li>
-            <li><a href="#">API &amp; documentação</a></li>
-            <li><a href="#">Integrações</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5>Para você</h5>
-          <ul>
-            <li><a href="#">Escritórios contábeis</a></li>
-            <li><a href="#">Empresas</a></li>
-            <li><a href="#">Revendas &amp; parceiros</a></li>
-            <li><a href="#">Setor público</a></li>
+            <li><a href="#produto">Produto</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#infocomex">Infocomex</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
         <div>
@@ -109,8 +164,6 @@ const Footer = () => (
             <li><a href="https://infocomex.com.br" target="_blank" rel="noopener">Infocomex.com.br ↗</a></li>
             <li><a href="https://infocomex.com.br/comprar" target="_blank" rel="noopener">Loja de certificados</a></li>
             <li><a href="https://infocomex.com.br/especiais/nossas-unidades" target="_blank" rel="noopener">Unidades SC</a></li>
-            <li><a href="#">Sobre o CertBloker</a></li>
-            <li><a href="#">Status &amp; segurança</a></li>
           </ul>
         </div>
       </div>
@@ -127,5 +180,5 @@ const Footer = () => (
 );
 
 window.FAQ = FAQ;
-window.FinalCTA = FinalCTA;
+window.ContactSection = ContactSection;
 window.Footer = Footer;
