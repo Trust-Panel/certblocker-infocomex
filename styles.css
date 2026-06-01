@@ -428,6 +428,7 @@ h1.hero-title .strike::after {
 }
 .trust-row.inv .trust-cell { color: rgba(255,255,255,0.85); }
 .trust-cell svg { color: var(--royal-600); flex-shrink: 0; }
+.trust-cell .trust-logo { height: 32px; width: auto; object-fit: contain; flex-shrink: 0; }
 .trust-row.inv .trust-cell svg { color: var(--royal-400); }
 .trust-cell b { font-weight: 600; color: white; }
 .trust-row.inv .trust-cell b { color: white; }
@@ -1156,11 +1157,22 @@ footer {
 }
 @media (max-width: 560px) {
   .nav-cta { display: none; }
+
+  /* Trust row: keep the three seals on a single line */
+  .trust-row { flex-wrap: nowrap; padding: 8px 2px; }
+  .trust-cell { padding: 6px 7px; gap: 5px; }
+  .trust-cell .trust-logo { height: 19px; }
+  .trust-cell-sub { font-size: 9px; }
+  .trust-divider { margin: 4px 0; }
 }
 @media (max-width: 480px) {
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { width: 100%; }
-  .trust-divider { display: none; }
+}
+@media (max-width: 360px) {
+  .trust-cell { padding: 6px 5px; }
+  .trust-cell .trust-logo { height: 17px; }
+  .trust-cell-sub { font-size: 8.5px; }
 }
 @media (max-width: 400px) {
   .kpi-row { grid-template-columns: 1fr; }

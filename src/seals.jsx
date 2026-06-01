@@ -46,17 +46,17 @@ const InfocomexBadge = ({size = 'md'}) => {
 const TrustRowCompact = ({inverse = false}) => (
   <div className={"trust-row " + (inverse ? 'inv' : '')}>
     <div className="trust-cell">
-      <img src="assets/serpro-logo.png" alt="SERPRO" style={{height: 32, width: 'auto', objectFit: 'contain'}} />
+      <img className="trust-logo" src="assets/serpro-logo.png" alt="SERPRO" />
       <span className="trust-cell-sub">AC desde 2010</span>
     </div>
     <div className="trust-divider"/>
     <div className="trust-cell">
-      <img src="assets/icp-logo.png" alt="ICP-Brasil" style={{height: 32, width: 'auto', objectFit: 'contain'}} />
+      <img className="trust-logo" src="assets/icp-logo.png" alt="ICP-Brasil" />
       <span className="trust-cell-sub">Validade jurídica</span>
     </div>
     <div className="trust-divider"/>
     <div className="trust-cell">
-      <img src="assets/infocomex-logo.png" alt="Infocomex" style={{height: 32, width: 'auto', objectFit: 'contain'}} />
+      <img className="trust-logo" src="assets/infocomex-logo.png" alt="Infocomex" />
       <span className="trust-cell-sub">+15 anos no mercado</span>
     </div>
   </div>
