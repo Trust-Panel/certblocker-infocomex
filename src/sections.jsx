@@ -1,10 +1,10 @@
 ﻿// Features, Product tabs, Steps sections
 
-// Elos da cadeia de confiança — do órgão federal até a plataforma.
+// Elos da cadeia de confiança, do órgão federal até a plataforma.
 const TRUST_CHAIN = [
   {
     logo: 'assets/serpro-logo.png', alt: 'SERPRO',
-    desc: 'Serviço Federal de Processamento de Dados — credencia e fiscaliza a Autoridade Certificadora.',
+    desc: 'Serviço Federal de Processamento de Dados, credencia e fiscaliza a Autoridade Certificadora.',
     tag: 'Órgão federal',
   },
   {
@@ -90,7 +90,7 @@ const Features = () => (
       <div className="section-head">
         <div className="kicker">Plataforma</div>
         <h2>Tudo o que sua empresa precisa para gerenciar certificados A1, em um único lugar.</h2>
-        <p>Acabe com o controle por planilha e e-mails perdidos. O CertBloker concentra cofre seguro, alertas de vencimento, controle de acesso granular e auditoria imutável — em uma única plataforma corporativa pronta para TI, Contabilidade e Jurídico.</p>
+        <p>Acabe com o controle por planilha e e-mails perdidos. O CertBloker concentra cofre seguro, alertas de vencimento, controle de acesso granular e auditoria imutável, em uma única plataforma corporativa pronta para TI, Contabilidade e Jurídico.</p>
       </div>
 
       <div className="features-grid">
@@ -98,23 +98,23 @@ const Features = () => (
         <div className="feat-card dark">
           <div className="feat-icn"><I.bell/></div>
           <h3 className="feat-title">Alertas inteligentes de vencimento</h3>
-          <p className="feat-desc">Notificações automáticas por e-mail com prazo configurável (D-30, D-15 e D-7). Dashboard consolidado com linha do tempo — seu time renova no momento certo, nunca antes, nunca depois.</p>
+          <p className="feat-desc">Notificações automáticas por e-mail com prazo configurável (D-30, D-15 e D-7). Dashboard consolidado com linha do tempo, seu time renova no momento certo, nunca antes, nunca depois.</p>
           <div className="feat-visual">
             <div className="feat-visual-title">Painel de alertas</div>
             <div className="feat-alert-row">
               <span className="alert-dot" style={{background:'#f59e0b'}}/>
               <span className="alert-badge" style={{background:'rgba(245,158,11,0.18)',color:'#fbbf24'}}>D-30</span>
-              <span className="alert-text">Mendes Contábil — alerta a Maria L.</span>
+              <span className="alert-text">Mendes Contábil, alerta a Maria L.</span>
             </div>
             <div className="feat-alert-row">
               <span className="alert-dot" style={{background:'#ef4444'}}/>
               <span className="alert-badge" style={{background:'rgba(239,68,68,0.18)',color:'#f87171'}}>D-7</span>
-              <span className="alert-text">Pereira Log — alerta a 3 destinatários</span>
+              <span className="alert-text">Pereira Log, alerta a 3 destinatários</span>
             </div>
             <div className="feat-alert-row">
               <span className="alert-dot" style={{background:'#10b981'}}/>
               <span className="alert-badge" style={{background:'rgba(16,185,129,0.18)',color:'#34d399'}}>OK</span>
-              <span className="alert-text">Aurora Construtora — em dia</span>
+              <span className="alert-text">Aurora Construtora, em dia</span>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ const Features = () => (
         <div className="feat-card dark">
           <div className="feat-icn"><I.shield/></div>
           <h3 className="feat-title">Sem download no dispositivo</h3>
-          <p className="feat-desc">O certificado nunca é baixado para o computador do usuário. Toda operação acontece em ambiente cloud isolado, com rastreabilidade de ponta a ponta — zero risco de arquivo .pfx solto.</p>
+          <p className="feat-desc">O certificado nunca é baixado para o computador do usuário. Toda operação acontece em ambiente cloud isolado, com rastreabilidade de ponta a ponta, zero risco de arquivo .pfx solto.</p>
           <div className="feat-visual">
             <div className="feat-visual-title">Segurança do cofre</div>
             <div className="feat-alert-row">

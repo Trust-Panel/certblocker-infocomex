@@ -7,7 +7,7 @@ const FAQS = [
   },
   {
     q: 'Minha carteira de certificados está protegida dentro da plataforma?',
-    a: 'Sim. A plataforma realiza apenas a leitura dos certificados A1 em ambiente criptografado AES-256 — o mesmo padrão usado por bancos e instituições financeiras. O arquivo e a senha nunca são enviados nem armazenados em nossos servidores, e os certificados também nunca são baixados na máquina do colaborador. Toda operação acontece com rastreabilidade ponta-a-ponta.',
+    a: 'Sim. A plataforma realiza apenas a leitura dos certificados A1 em ambiente criptografado AES-256, o mesmo padrão usado por bancos e instituições financeiras. O arquivo e a senha nunca são enviados nem armazenados em nossos servidores, e os certificados também nunca são baixados na máquina do colaborador. Toda operação acontece com rastreabilidade ponta-a-ponta.',
   },
   {
     q: 'Como é feito o controle de quem pode usar cada certificado?',
@@ -50,13 +50,13 @@ const FAQ = () => {
   );
 };
 
-// Dados de contato — edite aqui para atualizar os cards da seção.
+// Dados de contato, edite aqui para atualizar os cards da seção.
 const CONTACT = {
   email: 'comercial@certbloker.com.br',
   emailNote: 'Resposta em até 2h úteis',
   whatsapp: '(66) 99262-3898',
   whatsappNote: 'Atendimento dedicado',
-  hours: 'Segunda a Sexta — 8h às 18h (Brasília)',
+  hours: 'Segunda a Sexta, 8h às 18h (Brasília)',
 };
 
 const ContactSection = () => {
@@ -68,9 +68,9 @@ const ContactSection = () => {
     <section className="block contact" id="contato">
       <div className="container">
         <div className="contact-grid">
-          {/* Coluna esquerda — convite + contatos */}
+          {/* Coluna esquerda, convite + contatos */}
           <div className="contact-intro">
-            <div className="kicker">— Contato comercial</div>
+            <div className="kicker">Contato comercial</div>
             <h2 className="text-balance">Vamos transformar a gestão de A1 da sua empresa.</h2>
             <p>Fale com nosso time e veja em 20 minutos como reduzir risco operacional, eliminar multas e devolver tempo para TI, Contabilidade e Jurídico.</p>
 
@@ -101,7 +101,7 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Coluna direita — card de formulário (visual) */}
+          {/* Coluna direita, card de formulário (visual) */}
           <div className="contact-form">
             <h3>Solicite uma demonstração</h3>
             <p className="contact-form-sub">Preencha e retornaremos em até 2 horas úteis.</p>
@@ -147,7 +147,7 @@ const Footer = () => (
           <a href="#" className="brand">
             <Logo size={56}/>
           </a>
-          <p className="foot-intro">Gestão inteligente de certificados digitais A1 — operada pela <a href="https://infocomex.com.br" target="_blank" rel="noopener" style={{color: 'var(--royal-600)', fontWeight: 600}}>Infocomex</a>, Autoridade Certificadora credenciada SERPRO desde 2010, sob a cadeia ICP-Brasil.</p>
+          <p className="foot-intro">Gestão inteligente de certificados digitais A1, operada pela <a href="https://infocomex.com.br" target="_blank" rel="noopener" style={{color: 'var(--royal-600)', fontWeight: 600}}>Infocomex</a>, Autoridade Certificadora credenciada SERPRO desde 2010, sob a cadeia ICP-Brasil.</p>
         </div>
         <div>
           <h5>Navegação</h5>
@@ -168,7 +168,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="foot-bottom">
-        <div>© 2026 CertBlocker — Todos os direitos reservados</div>
+        <div>© 2026 CertBlocker, Todos os direitos reservados</div>
         <div style={{display: 'flex', gap: 18}}>
           <a href="#">Privacidade</a>
           <a href="#">Termos</a>

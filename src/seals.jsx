@@ -1,11 +1,11 @@
-// Trust seals — text-based stylized badges (not logo recreations).
+// Trust seals, text-based stylized badges (not logo recreations).
 // User can replace with official artwork uploads later.
 
 const SerproSeal = ({size = 'md'}) => {
   const h = size === 'lg' ? 56 : size === 'sm' ? 38 : 46;
   return (
     <div className="seal-card" style={{height: h}}>
-      <img src="assets/serpro-logo.png" alt="Logo SERPRO — Serviço Federal de Processamento de Dados" style={{width: h * 0.5, height: h * 0.5, objectFit: 'contain', flexShrink: 0}} />
+      <img src="assets/serpro-logo.png" alt="Logo SERPRO, Serviço Federal de Processamento de Dados" style={{width: h * 0.5, height: h * 0.5, objectFit: 'contain', flexShrink: 0}} />
       <div className="seal-text">
         <div className="seal-lbl">Credenciada</div>
         <div className="seal-name">SERPRO</div>
@@ -18,7 +18,7 @@ const IcpBrasilSeal = ({size = 'md'}) => {
   const h = size === 'lg' ? 56 : size === 'sm' ? 38 : 46;
   return (
     <div className="seal-card" style={{height: h}}>
-      <img src="assets/icp-logo.png" alt="Logo ICP-Brasil — Infraestrutura de Chaves Públicas Brasileira" style={{width: h * 0.55, height: h * 0.55, objectFit: 'contain', flexShrink: 0}} />
+      <img src="assets/icp-logo.png" alt="Logo ICP-Brasil, Infraestrutura de Chaves Públicas Brasileira" style={{width: h * 0.55, height: h * 0.55, objectFit: 'contain', flexShrink: 0}} />
       <div className="seal-text">
         <div className="seal-lbl">Certificação</div>
         <div className="seal-name">ICP-Brasil</div>
