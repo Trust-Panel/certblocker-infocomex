@@ -160,22 +160,22 @@ const Features = () => (
         <div className="feat-card dark">
           <div className="feat-icn"><I.chart/></div>
           <h3 className="feat-title">Auditoria &amp; relatórios</h3>
-          <p className="feat-desc">Trilha completa de quem emitiu, baixou, assinou ou revogou. Exporte relatórios prontos para LGPD, conformidade e clientes.</p>
+          <p className="feat-desc">Registro completo de quem acessou qual site, quando e se o acesso foi liberado ou bloqueado. Exporte relatórios prontos para LGPD, conformidade e auditoria interna.</p>
           <div className="feat-visual">
-            <div className="feat-visual-title">Trilha de auditoria</div>
+            <div className="feat-visual-title">Log de acessos</div>
             <div className="feat-alert-row">
-              <span className="feat-act emit">emitiu</span>
-              <span className="alert-text">Maria L. · Cert #4471</span>
+              <span className="feat-act allowed">Liberado</span>
+              <span className="alert-text">Maria L. · ECAC</span>
               <span className="feat-time">14:32</span>
             </div>
             <div className="feat-alert-row">
-              <span className="feat-act down">baixou</span>
-              <span className="alert-text">João P. · Cert #2210</span>
+              <span className="feat-act allowed">Liberado</span>
+              <span className="alert-text">João P. · Siscomex</span>
               <span className="feat-time">09:10</span>
             </div>
             <div className="feat-alert-row">
-              <span className="feat-act revoke">revogou</span>
-              <span className="alert-text">Admin · Cert #1180</span>
+              <span className="feat-act blocked">Não liberado</span>
+              <span className="alert-text">Pedro S. · ECAC</span>
               <span className="feat-time">ontem</span>
             </div>
           </div>
