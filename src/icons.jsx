@@ -138,6 +138,16 @@ const I = {
       <path d="M12 7.5V12l3 2"/>
     </svg>
   ),
+  menu: (p) => (
+    <svg width={p.size||22} height={p.size||22} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <path d="M4 7h16M4 12h16M4 17h16"/>
+    </svg>
+  ),
+  close: (p) => (
+    <svg width={p.size||22} height={p.size||22} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <path d="M6 6l12 12M18 6L6 18"/>
+    </svg>
+  ),
 };
 
 window.I = I;

@@ -4,24 +4,46 @@ const Logo = ({size=72}) => (
   <img src="assets/certbloker-logo.png" alt="CertBloker" style={{height: size, width: 'auto', display: 'block'}} />
 );
 
-const Header = () => (
-  <header className="nav">
-    <div className="container nav-inner">
-      <a href="#" className="brand">
-        <Logo />
-      </a>
-      <nav className="nav-links">
-        <a className="nav-link" href="#produto">Produto</a>
-        <a className="nav-link" href="#como-funciona">Como funciona</a>
-        <a className="nav-link" href="#infocomex">Infocomex</a>
-        <a className="nav-link" href="#faq">FAQ</a>
-      </nav>
-      <div className="nav-cta">
-        <a href="#cta" className="btn btn-primary btn-sm">Falar com especialista <I.arrow size={14}/></a>
+const Header = () => {
+  const [open, setOpen] = React.useState(false);
+  const close = () => setOpen(false);
+  return (
+    <header className="nav">
+      <div className="container nav-inner">
+        <a href="#" className="brand" onClick={close}>
+          <Logo />
+        </a>
+        <nav className="nav-links">
+          <a className="nav-link" href="#produto">Produto</a>
+          <a className="nav-link" href="#como-funciona">Como funciona</a>
+          <a className="nav-link" href="#infocomex">Infocomex</a>
+          <a className="nav-link" href="#faq">FAQ</a>
+        </nav>
+        <div className="nav-right">
+          <div className="nav-cta">
+            <a href="#cta" className="btn btn-primary btn-sm">Falar com especialista <I.arrow size={14}/></a>
+          </div>
+          <button
+            className="nav-toggle"
+            aria-label={open ? 'Fechar menu' : 'Abrir menu'}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? <I.close size={22}/> : <I.menu size={22}/>}
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-);
+      <div id="mobile-menu" className={"mobile-menu" + (open ? " open" : "")}>
+        <a className="mobile-menu-link" href="#produto" onClick={close}>Produto</a>
+        <a className="mobile-menu-link" href="#como-funciona" onClick={close}>Como funciona</a>
+        <a className="mobile-menu-link" href="#infocomex" onClick={close}>Infocomex</a>
+        <a className="mobile-menu-link" href="#faq" onClick={close}>FAQ</a>
+        <a className="btn btn-primary mobile-menu-cta" href="#cta" onClick={close}>Falar com especialista <I.arrow size={14}/></a>
+      </div>
+    </header>
+  );
+};
 
 const DashboardMock = () => (
   <div className="dash" role="img" aria-label="Painel CertBlocker mostrando lista de certificados A1 com status, dias para vencer e responsáveis">
