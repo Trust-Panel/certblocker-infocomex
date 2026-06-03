@@ -191,6 +191,25 @@ const Hero = () => (
   </section>
 );
 
+const STATS = [
+  { v: '100%', l: 'CERTIFICADOS SOB CONTROLE' },
+  { v: 'AES-256', l: 'CRIPTOGRAFIA DE PADRÃO BANCÁRIO' },
+  { v: '24/7', l: 'MONITORAMENTO CONTÍNUO' },
+  { v: '<2h', l: 'TEMPO DE RESPOSTA COMERCIAL' },
+];
+const StatsBand = () => (
+  <section className="stats-band">
+    <div className="container stats-grid">
+      {STATS.map((s, i) => (
+        <div className="stat" key={i}>
+          <div className="stat-v">{s.v}</div>
+          <div className="stat-l">{s.l}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+);
+
 const LogosStrip = () => (
   <section className="logos">
     <div className="container">
@@ -209,5 +228,6 @@ const LogosStrip = () => (
 
 window.Header = Header;
 window.Hero = Hero;
+window.StatsBand = StatsBand;
 window.LogosStrip = LogosStrip;
 window.Logo = Logo;

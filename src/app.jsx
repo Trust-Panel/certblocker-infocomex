@@ -3,6 +3,7 @@ const App = () => (
   <>
     <Header/>
     <Hero/>
+    <StatsBand/>
     <LogosStrip/>
     <Features/>
     <Steps/>

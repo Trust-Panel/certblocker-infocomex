@@ -276,6 +276,12 @@ h1.hero-title .strike::after {
 .fcard-alert { top: 46%; right: -32px; min-width: 220px; }
 .fcard-conf { bottom: 24px; left: 24px; right: 24px; }
 
+/* ---------- Barra de stats ---------- */
+.stats-band { border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); background: var(--bg-soft); }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 48px 32px; }
+.stat-v { font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 3vw, 44px); color: var(--royal-400); letter-spacing: -0.02em; line-height: 1; }
+.stat-l { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-500); margin-top: 10px; }
+
 /* ---------- Dashboard mock ---------- */
 .dash {
   position: relative;
