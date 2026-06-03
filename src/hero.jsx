@@ -151,27 +151,41 @@ const DashboardMock = () => (
 const Hero = () => (
   <section className="hero">
     <div className="hero-bg"/>
-    <div className="hero-grid"/>
     <div className="container hero-inner">
-      <div>
+      <div className="hero-copy">
         <div className="eyebrow">
-          <span className="dot"><I.shield size={10}/></span>
-          <span>Tecnologia <strong>Infocomex</strong> · AC credenciada <strong>SERPRO</strong> desde 2010</span>
+          <span className="dot"/>
+          <span>PLATAFORMA CORPORATIVA • GESTÃO DE CERTIFICADOS DIGITAIS A1</span>
         </div>
         <h1 className="hero-title">
-          A solução definitiva na gestão centralizada dos seus <span className="accent">certificados digitais A1.</span>
+          Segurança institucional na gestão dos seus <span className="accent">certificados digitais.</span>
         </h1>
         <p className="hero-sub">
-          Centralize os certificados A1 da sua empresa em um cofre seguro, com controle de acesso por colaborador. E se precisar emitir ou renovar, a <b>Infocomex</b> , AC credenciada SERPRO desde 2010, cuida de tudo.
+          A CertBlocker automatiza 100% do ciclo de vida dos certificados A1 da sua empresa, com criptografia bancária, alertas antecipados e controle granular de acesso. Zero certificados vencidos. Zero riscos operacionais.
         </p>
         <div className="hero-actions">
-          <a href="#cta" className="btn btn-primary btn-lg">Agendar demonstração <I.arrow size={14}/></a>
-          <a href="#produto" className="btn btn-outline btn-lg">Ver a plataforma</a>
+          <a href="#contato" className="btn btn-primary btn-lg">Agendar Demonstração <I.arrow size={14}/></a>
+          <a href="#como-funciona" className="btn btn-outline btn-lg">Como funciona</a>
         </div>
-        <TrustRowCompact/>
+        <HeroSeals/>
       </div>
-      <div style={{position: 'relative'}}>
-        <DashboardMock/>
+      <div className="hero-media">
+        <div className="hero-photo">
+          <img src="assets/hero-team.jpeg" alt="Equipe corporativa utilizando o painel CertBlocker"/>
+        </div>
+        <div className="fcard fcard-active">
+          <div className="fcard-lbl">CERTIFICADOS ATIVOS</div>
+          <div className="fcard-val">150 Monitorados</div>
+        </div>
+        <div className="fcard fcard-alert">
+          <div className="fcard-lbl">ALERTA DE RENOVAÇÃO</div>
+          <div className="fcard-row"><span className="fcard-val sm">Vence em 30d</span><span className="fcard-badge">Auto</span></div>
+        </div>
+        <div className="fcard fcard-conf">
+          <div className="fcard-lbl">CONFORMIDADE GERAL</div>
+          <div className="fcard-row"><span className="fcard-val sm">Seguros &amp; Protegidos</span><span className="fcard-pct">98.4%</span></div>
+          <div className="fcard-bar"><span style={{width:'98.4%'}}/></div>
+        </div>
       </div>
     </div>
   </section>
