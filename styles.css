@@ -644,6 +644,7 @@ h1.hero-title .strike::after {
 .quote-box cite { font-style: normal; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; color: var(--gold-soft); }
 
 /* ---------- COMO FUNCIONA ---------- */
+.howto { background: #070D28; }
 .howto-list { display: flex; flex-direction: column; gap: 24px; }
 .step-card2 { display: grid; grid-template-columns: auto 1fr auto; gap: 32px; align-items: center; background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--r-xl); padding: 36px 40px; }
 .step-num { font-family: var(--font-display); font-weight: 700; font-size: 44px; color: #fff; line-height: 1; opacity: 0.95; }
