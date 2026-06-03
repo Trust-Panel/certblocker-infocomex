@@ -76,7 +76,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .nav-inner {
   display: flex; align-items: center; justify-content: space-between;
-  height: 84px;
+  height: 96px;
 }
 .brand { display: flex; align-items: center; gap: 10px; }
 .brand-mark {
