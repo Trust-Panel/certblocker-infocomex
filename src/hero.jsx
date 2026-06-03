@@ -106,24 +106,7 @@ const StatsBand = () => (
   </section>
 );
 
-const LogosStrip = () => (
-  <section className="logos">
-    <div className="container">
-      <div className="logos-label">Empresas e escritórios que centralizam certificados no CertBlocker</div>
-      <div className="logos-row">
-        <div className="logo">AURORA<sup>™</sup></div>
-        <div className="logo italic">Mendes&amp;Co</div>
-        <div className="logo mono">VIDOTTI</div>
-        <div className="logo">◇ Pereira Log</div>
-        <div className="logo italic">LimaSouza</div>
-        <div className="logo mono">NORTH/SUL</div>
-      </div>
-    </div>
-  </section>
-);
-
 window.Header = Header;
 window.Hero = Hero;
 window.StatsBand = StatsBand;
-window.LogosStrip = LogosStrip;
 window.Logo = Logo;

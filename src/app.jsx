@@ -4,7 +4,6 @@ const App = () => (
     <Header/>
     <Hero/>
     <StatsBand/>
-    <LogosStrip/>
     <Platform/>
     <Features/>
     <Enterprise/>
