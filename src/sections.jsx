@@ -186,53 +186,53 @@ const Enterprise = () => (
   </section>
 );
 
+const STEPS = [
+  { n: '01', title: 'Administrador Principal', tag: 'CONTROLE TOTAL', visual: 'admin',
+    desc: 'Um usuário-chave (CEO, Diretor de TI, CFO ou Controller) é designado com perfil de administrador e passa a gerenciar toda a plataforma institucionalmente.' },
+  { n: '02', title: 'Cadastro de Certificados', tag: 'CRIPTOGRAFIA BANCÁRIA', visual: 'pfx',
+    desc: 'A plataforma realiza apenas a leitura dos certificados A1 em ambiente criptografado AES-256. O arquivo e a senha nunca são enviados nem armazenados em nossos servidores.' },
+  { n: '03', title: 'Usuários & Grupos', tag: 'ACESSO MÍNIMO NECESSÁRIO', visual: 'network',
+    desc: 'Crie colaboradores, organize por grupos departamentais e defina de forma cirúrgica quais certificados cada grupo pode acessar.' },
+  { n: '04', title: 'Instalação do app', tag: 'DISTRIBUIÇÃO VIA GPO', visual: 'app',
+    desc: 'Um app leve é instalado no Windows do colaborador. Distribuição via GPO para ambientes gerenciados.' },
+  { n: '05', title: 'Login seguro & uso controlado', tag: 'ZERO VAZAMENTO', visual: 'lock',
+    desc: 'O sistema libera apenas os certificados do grupo. Sem download, sem arquivos soltos, sem vazamento.' },
+];
+const StepVisual = ({kind}) => {
+  if (kind === 'pfx') return <div className="sv-file">.PFX · A1</div>;
+  if (kind === 'admin') return <div className="sv-avatar"><I.users size={26}/><span className="sv-check"><I.check size={12}/></span></div>;
+  if (kind === 'network') return <div className="sv-icn"><I.network size={40}/></div>;
+  if (kind === 'app') return <div className="sv-icn"><I.cog size={34}/></div>;
+  return <div className="sv-icn"><I.lock size={34}/></div>;
+};
 const Steps = () => (
-  <section className="block" id="como-funciona" style={{background: 'var(--bg)'}}>
+  <section className="block howto" id="como-funciona">
     <div className="container">
       <div className="section-head">
-        <div className="kicker">Como funciona</div>
-        <h2>Implantação em 5 passos, sem consultoria paralela.</h2>
-        <p>Onboarding guiado pelo nosso time. Sua equipe opera com autonomia desde o primeiro dia.</p>
+        <div className="kicker-blue center">COMO FUNCIONA</div>
+        <h2>Implementação em 5 etapas, sem consultoria paralela.</h2>
+        <p>Onboarding guiado pela nossa equipe. Seu time opera com autonomia a partir do primeiro dia.</p>
       </div>
-      <div className="steps">
-        <div className="step">
-          <div className="step-node">01</div>
-          <div className="step-card">
-            <div className="step-icon"><I.building size={22}/></div>
-            <h4>Administrador principal</h4>
-            <p>Um gestor-chave é designado como administrador e controla toda a plataforma institucionalmente.</p>
+      <div className="howto-list">
+        {STEPS.map((s) => (
+          <div className="step-card2" key={s.n}>
+            <div className="step-num">{s.n}</div>
+            <div className="step-body">
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
+              <div className="step-tag"><span className="step-dot"/>{s.tag}</div>
+            </div>
+            <div className="step-visual"><StepVisual kind={s.visual}/></div>
           </div>
-        </div>
-        <div className="step">
-          <div className="step-node">02</div>
-          <div className="step-card">
-            <div className="step-icon"><I.cert size={22}/></div>
-            <h4>Cadastro dos certificados</h4>
-            <p>A plataforma lê os certificados A1 em AES-256. O arquivo e a senha nunca saem do seu controle.</p>
+        ))}
+        <div className="secure-card">
+          <div className="secure-icn"><I.shield size={22}/></div>
+          <div className="secure-body">
+            <h3>Segurança institucional por padrão</h3>
+            <p>O colaborador nunca baixa o certificado. Tudo fica protegido na nuvem CertBlocker, com rastreabilidade total de cada operação.</p>
           </div>
-        </div>
-        <div className="step">
-          <div className="step-node">03</div>
-          <div className="step-card">
-            <div className="step-icon"><I.users size={22}/></div>
-            <h4>Usuários &amp; grupos</h4>
-            <p>Crie colaboradores, organize por departamento e defina quais certificados cada grupo acessa.</p>
-          </div>
-        </div>
-        <div className="step">
-          <div className="step-node">04</div>
-          <div className="step-card">
-            <div className="step-icon"><I.cog size={22}/></div>
-            <h4>Instalação do app</h4>
-            <p>Um app leve é instalado no Windows do colaborador. Distribuição via GPO para ambientes gerenciados.</p>
-          </div>
-        </div>
-        <div className="step">
-          <div className="step-node">05</div>
-          <div className="step-card">
-            <div className="step-icon"><I.lock size={22}/></div>
-            <h4>Login seguro &amp; uso controlado</h4>
-            <p>O sistema libera apenas os certificados do grupo. Sem download, sem arquivos soltos, sem vazamento.</p>
+          <div className="secure-chips">
+            <span>SEM DOWNLOADS</span><span>LOG COMPLETO</span><span>AUDITÁVEL</span>
           </div>
         </div>
       </div>
