@@ -156,6 +156,36 @@ const Features = () => (
   </section>
 );
 
+const Enterprise = () => (
+  <section className="block enterprise">
+    <div className="container enterprise-grid">
+      <div className="photo-collage">
+        <figure className="pc-main">
+          <img src="assets/depo-ceo.jpg" alt="CEO em ambiente executivo"/>
+          <figcaption>CEO · Gestão Executiva</figcaption>
+        </figure>
+        <figure className="pc-top">
+          <img src="assets/depo-fiscal.jpeg" alt="Equipe fiscal em reunião"/>
+          <figcaption>Equipe Fiscal</figcaption>
+        </figure>
+        <figure className="pc-bot">
+          <img src="assets/depo-financeiro.jpg" alt="Departamento financeiro em reunião"/>
+          <figcaption>Departamento Financeiro</figcaption>
+        </figure>
+      </div>
+      <div className="enterprise-copy">
+        <div className="kicker-gold">— Feito para empresas sérias</div>
+        <h2>Quando o seu negócio depende de conformidade, o certificado digital não é detalhe.</h2>
+        <p>Um certificado vencido pode interromper a emissão de notas, bloquear processos judiciais, travar pagamentos e gerar multas tributárias significativas. A CertBlocker foi desenhada junto com equipes de Controladoria, TI e Jurídico de médias e grandes empresas para eliminar esse risco, sem adicionar atrito operacional.</p>
+        <blockquote className="quote-box">
+          <p>"Migramos o controle de 80 certificados para a CertBlocker em duas semanas. Desde então, nunca mais tivemos um vencimento silencioso. A equipe fiscal recuperou o foco em estratégia."</p>
+          <cite>DIRETORIA DE TI — GRUPO CORPORATIVO BRASILEIRO</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+);
+
 const Steps = () => (
   <section className="block" id="como-funciona" style={{background: 'var(--bg)'}}>
     <div className="container">
@@ -211,6 +241,7 @@ const Steps = () => (
 );
 
 window.Platform = Platform;
+window.Enterprise = Enterprise;
 window.InforcomexPartner = InforcomexPartner;
 window.Features = Features;
 window.Steps = Steps;

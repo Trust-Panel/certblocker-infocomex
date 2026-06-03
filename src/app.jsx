@@ -7,6 +7,7 @@ const App = () => (
     <LogosStrip/>
     <Platform/>
     <Features/>
+    <Enterprise/>
     <Steps/>
     <InforcomexPartner/>
     <FAQ/>
