@@ -213,7 +213,7 @@ const StatsBand = () => (
 const LogosStrip = () => (
   <section className="logos">
     <div className="container">
-      <div className="logos-label">Empresas e escritórios que centralizam certificados no CertBloker</div>
+      <div className="logos-label">Empresas e escritórios que centralizam certificados no CertBlocker</div>
       <div className="logos-row">
         <div className="logo">AURORA<sup>™</sup></div>
         <div className="logo italic">Mendes&amp;Co</div>
