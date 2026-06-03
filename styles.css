@@ -646,7 +646,7 @@ h1.hero-title .strike::after {
 /* ---------- COMO FUNCIONA ---------- */
 .howto { background: #070D28; }
 .howto-list { display: flex; flex-direction: column; gap: 24px; }
-.step-card2 { display: grid; grid-template-columns: auto 1fr auto; gap: 32px; align-items: center; background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--r-xl); padding: 36px 40px; }
+.step-card2 { display: grid; grid-template-columns: auto 1fr auto; gap: 32px; align-items: center; background: var(--bg-card); border: 1px solid rgba(120,150,220,0.16); border-radius: var(--r-xl); padding: 36px 40px; }
 .step-num { font-family: var(--font-display); font-weight: 700; font-size: 44px; color: #fff; line-height: 1; opacity: 0.95; }
 .step-body h3 { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: #fff; margin: 0 0 10px; }
 .step-body p { color: var(--ink-700); font-size: 15px; line-height: 1.6; margin: 0 0 16px; max-width: 520px; }
