@@ -1287,3 +1287,32 @@ footer {
 @media (max-width: 400px) {
   .kpi-row { grid-template-columns: 1fr; }
 }
+
+/* ---------- Responsivo (redesign) ---------- */
+@media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-media { margin-top: 8px; }
+  .fcard-active { left: 8px; }
+  .fcard-alert { right: 8px; }
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .plat-cards { grid-template-columns: 1fr; }
+  .recursos-grid { grid-template-columns: 1fr; gap: 40px; }
+  .recursos-head { margin-bottom: 40px; }
+  .enterprise-grid { grid-template-columns: 1fr; gap: 40px; }
+  .photo-collage { min-height: 320px; }
+  .faq-layout { grid-template-columns: 1fr; gap: 32px; }
+  .step-card2 { grid-template-columns: auto 1fr; padding: 28px 24px; gap: 24px; }
+  .step-visual { display: none; }
+  .secure-card { grid-template-columns: auto 1fr; padding: 26px 24px; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .hero-seals { gap: 16px; }
+  .fcard-conf { left: 12px; right: 12px; }
+  .fcard-active, .fcard-alert { display: none; }
+  .secure-card { grid-template-columns: 1fr; gap: 16px; }
+  .step-num { font-size: 34px; }
+  .foot-grid { grid-template-columns: 1fr; gap: 28px; }
+  .foot-bottom { flex-direction: column; gap: 8px; align-items: flex-start; }
+}
