@@ -84,6 +84,39 @@ const InforcomexPartner = () => (
   </section>
 );
 
+const PLAT_CARDS = [
+  { tag: 'STATUS', title: 'Visão instantânea', desc: 'Válidos, expirando, expirados e totais, em cartões claros, com semáforo de criticidade.' },
+  { tag: 'CERTIFICADOS RECENTES', title: 'Tabela operacional', desc: 'Tipo, emissor, validade e status de cada certificado, com filtros e exportação rápida.' },
+  { tag: 'GESTÃO', title: 'Clientes, usuários, grupos', desc: 'Organize por cliente, defina grupos e controle permissões a partir de um menu lateral único.' },
+];
+const Platform = () => (
+  <section className="block platform" id="produto">
+    <div className="container">
+      <div className="section-head">
+        <div className="kicker-gold center"><span className="rule"/>A PLATAFORMA<span className="rule"/></div>
+        <h2>Um painel único para toda a gestão de certificados digitais.</h2>
+        <p>Visão consolidada de status, vencimentos, usuários e auditoria, sem planilhas, sem e-mails perdidos.</p>
+      </div>
+      <div className="browser">
+        <div className="browser-bar">
+          <div className="dots"><span/><span/><span/></div>
+          <div className="browser-url"><I.lock size={11}/> certbloker.com.br/dashboard</div>
+        </div>
+        <img className="browser-shot" src="assets/dashboard.jpeg" alt="Dashboard do CertBlocker com status, certificados e validade"/>
+      </div>
+      <div className="plat-cards">
+        {PLAT_CARDS.map((c, i) => (
+          <div className="plat-card" key={i}>
+            <div className="plat-tag">{c.tag}</div>
+            <h3>{c.title}</h3>
+            <p>{c.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 const Features = () => (
   <section className="block" id="produto">
     <div className="container">
@@ -239,6 +272,7 @@ const Steps = () => (
   </section>
 );
 
+window.Platform = Platform;
 window.InforcomexPartner = InforcomexPartner;
 window.Features = Features;
 window.Steps = Steps;

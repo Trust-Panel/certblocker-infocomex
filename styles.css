@@ -621,6 +621,23 @@ h1.hero-title .strike::after {
 .logos-row .logo.italic { font-style: italic; font-family: 'Inter', serif; font-weight: 800; }
 .logos-row .logo.mono { font-family: var(--font-mono); font-weight: 500; font-size: 14px; text-transform: uppercase; }
 
+/* ---------- A PLATAFORMA ---------- */
+.platform .section-head { max-width: 760px; }
+.browser { border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-pop); background: var(--bg-card); margin-bottom: 48px; }
+.browser-bar { display: flex; align-items: center; gap: 14px; padding: 12px 16px; background: rgba(8,14,34,0.9); border-bottom: 1px solid var(--line); }
+.browser-bar .dots { display: flex; gap: 6px; }
+.browser-bar .dots span { width: 11px; height: 11px; border-radius: 50%; background: rgba(255,255,255,0.18); }
+.browser-bar .dots span:nth-child(1){ background:#ff5f57; }
+.browser-bar .dots span:nth-child(2){ background:#febc2e; }
+.browser-bar .dots span:nth-child(3){ background:#28c840; }
+.browser-url { font-family: var(--font-mono); font-size: 12px; color: var(--ink-500); display: inline-flex; align-items: center; gap: 6px; }
+.browser-shot { display: block; width: 100%; height: auto; }
+.plat-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.plat-card { background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 28px; }
+.plat-tag { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.plat-card h3 { font-family: var(--font-display); font-weight: 600; font-size: 21px; color: #fff; margin: 0 0 10px; }
+.plat-card p { color: var(--ink-700); font-size: 14.5px; line-height: 1.6; margin: 0; }
+
 /* ---------- Section general ---------- */
 section.block { padding: 96px 0; position: relative; }
 .section-head { max-width: 720px; margin: 0 auto 56px; text-align: center; }

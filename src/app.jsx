@@ -5,6 +5,7 @@ const App = () => (
     <Hero/>
     <StatsBand/>
     <LogosStrip/>
+    <Platform/>
     <Features/>
     <Steps/>
     <InforcomexPartner/>
