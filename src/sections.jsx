@@ -29,7 +29,7 @@ const InforcomexPartner = () => (
     <div className="container">
       <div className="powered-grid">
         <div>
-          <div className="kicker">Grupo Infocomex</div>
+          <div className="kicker-blue">Grupo Infocomex</div>
           <h2>Certificados emitidos por uma Autoridade Certificadora. Gerenciados pelo CertBlocker.</h2>
           <p>
             O CertBlocker é a plataforma de gestão do <b>Grupo Infocomex</b>. A emissão dos seus certificados A1
