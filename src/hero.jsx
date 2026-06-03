@@ -1,8 +1,15 @@
 // Header + Hero with dashboard mock
 
-const Logo = ({size=72}) => (
-  <img src="assets/certbloker-logo.png" alt="CertBloker" style={{height: size, width: 'auto', display: 'block'}} />
+const Logo = ({size=40}) => (
+  <img src="assets/certbloker-logo.png" alt="CertBlocker" style={{height: size, width: 'auto', display: 'block'}} />
 );
+
+const NAV = [
+  { label: 'Recursos', href: '#recursos' },
+  { label: 'Como Funciona', href: '#como-funciona' },
+  { label: 'FAQ', href: '#faq' },
+  { label: 'Contato', href: '#contato' },
+];
 
 const Header = () => {
   const [open, setOpen] = React.useState(false);
@@ -10,18 +17,13 @@ const Header = () => {
   return (
     <header className="nav">
       <div className="container nav-inner">
-        <a href="#" className="brand" onClick={close}>
-          <Logo />
-        </a>
+        <a href="#" className="brand" onClick={close}><Logo /></a>
         <nav className="nav-links">
-          <a className="nav-link" href="#produto">Produto</a>
-          <a className="nav-link" href="#como-funciona">Como funciona</a>
-          <a className="nav-link" href="#infocomex">Infocomex</a>
-          <a className="nav-link" href="#faq">FAQ</a>
+          {NAV.map(n => <a key={n.href} className="nav-link" href={n.href}>{n.label}</a>)}
         </nav>
         <div className="nav-right">
           <div className="nav-cta">
-            <a href="#cta" className="btn btn-primary btn-sm">Falar com especialista <I.arrow size={14}/></a>
+            <a href="#contato" className="btn btn-primary btn-sm">Teste grátis agora <I.arrow size={14}/></a>
           </div>
           <button
             className="nav-toggle"
@@ -35,11 +37,8 @@ const Header = () => {
         </div>
       </div>
       <div id="mobile-menu" className={"mobile-menu" + (open ? " open" : "")}>
-        <a className="mobile-menu-link" href="#produto" onClick={close}>Produto</a>
-        <a className="mobile-menu-link" href="#como-funciona" onClick={close}>Como funciona</a>
-        <a className="mobile-menu-link" href="#infocomex" onClick={close}>Infocomex</a>
-        <a className="mobile-menu-link" href="#faq" onClick={close}>FAQ</a>
-        <a className="btn btn-primary mobile-menu-cta" href="#cta" onClick={close}>Falar com especialista <I.arrow size={14}/></a>
+        {NAV.map(n => <a key={n.href} className="mobile-menu-link" href={n.href} onClick={close}>{n.label}</a>)}
+        <a className="btn btn-primary mobile-menu-cta" href="#contato" onClick={close}>Teste grátis agora <I.arrow size={14}/></a>
       </div>
     </header>
   );
