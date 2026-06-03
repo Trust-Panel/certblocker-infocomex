@@ -1022,7 +1022,7 @@ section.block { padding: 96px 0; position: relative; }
 .faq-a .inner { padding: 0 4px 22px; max-width: 680px; }
 
 /* ---------- Contato comercial ---------- */
-.contact { position: relative; }
+.contact { position: relative; background: #070D28; }
 .contact::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background: radial-gradient(50% 60% at 85% 25%, rgba(31, 91, 255, 0.12), transparent 70%);
