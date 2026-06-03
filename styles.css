@@ -28,6 +28,9 @@
   --success: #10a37f;
   --warn: #d97706;
   --danger: #dc2626;
+  --gold: #c9962f;
+  --gold-soft: rgba(201,150,47,0.85);
+  --gold-line: rgba(201,150,47,0.45);
 
   --font-sans: 'Inter', -apple-system, system-ui, sans-serif;
   --font-display: 'Space Grotesk', 'Inter', sans-serif;
@@ -1106,6 +1109,17 @@ footer {
 .tl-time { color: rgba(140,160,215,0.6); }
 .days { color: rgba(190,210,255,0.75); }
 .brand-name .blok { color: var(--royal-400); }
+
+/* ---------- Kickers reutilizáveis ---------- */
+.kicker-gold, .kicker-blue {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--font-mono); font-size: 12px; font-weight: 500;
+  letter-spacing: 0.22em; text-transform: uppercase; margin: 0 0 20px;
+}
+.kicker-gold { color: var(--gold); }
+.kicker-blue { color: var(--royal-400); }
+.kicker-gold.center, .kicker-blue.center { justify-content: center; }
+.kicker-gold .rule, .kicker-blue .rule { width: 28px; height: 1px; background: currentColor; opacity: 0.7; }
 
 /* responsive */
 @media (max-width: 960px) {

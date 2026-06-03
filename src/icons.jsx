@@ -148,6 +148,27 @@ const I = {
       <path d="M6 6l12 12M18 6L6 18"/>
     </svg>
   ),
+  doc: (p) => (
+    <svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/>
+      <path d="M14 3v6h6M8 13h8M8 17h6"/>
+    </svg>
+  ),
+  network: (p) => (
+    <svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <circle cx="12" cy="5" r="2.5"/>
+      <circle cx="5" cy="19" r="2.5"/>
+      <circle cx="19" cy="19" r="2.5"/>
+      <path d="M12 7.5v3.5M12 11l-5.5 5.5M12 11l5.5 5.5"/>
+    </svg>
+  ),
+  userCheck: (p) => (
+    <svg width={p.size||18} height={p.size||18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/>
+      <circle cx="9" cy="7" r="4"/>
+      <path d="M16 11l2 2 4-4"/>
+    </svg>
+  ),
 };
 
 window.I = I;
