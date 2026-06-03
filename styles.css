@@ -1190,6 +1190,22 @@ footer {
 .days { color: rgba(190,210,255,0.75); }
 .brand-name .blok { color: var(--royal-400); }
 
+/* ---------- FAQ 2 colunas ---------- */
+.faq-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
+.faq-intro .kicker-gold { color: var(--gold); }
+.faq-intro h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 3.4vw, 50px); line-height: 1.08; color: #fff; margin: 0 0 20px; letter-spacing: -0.02em; }
+.faq-intro p { color: var(--ink-600); font-size: 16px; line-height: 1.6; margin: 0; max-width: 420px; }
+.faq-section .faq-wrap { max-width: none; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.faq-section .faq-item { border: 1px solid var(--line); border-radius: var(--r-md); background: var(--bg-soft); padding: 0 22px; }
+.faq-section .faq-q { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; padding: 22px 0; font-family: var(--font-display); font-weight: 600; font-size: 16.5px; color: #fff; text-align: left; }
+.faq-section .faq-q:hover { color: var(--royal-300); }
+.faq-section .faq-q .caret { color: var(--royal-400); }
+.faq-section .faq-a .inner { padding: 0 0 22px; color: var(--ink-700); font-size: 14.5px; line-height: 1.65; max-width: none; }
+
+/* ---------- Footer redesign ---------- */
+.foot-grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
+.foot-bottom { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--ink-400); text-transform: uppercase; }
+
 /* ---------- Kickers reutilizáveis ---------- */
 .kicker-gold, .kicker-blue {
   display: inline-flex; align-items: center; gap: 12px;

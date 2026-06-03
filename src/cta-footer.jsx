@@ -2,35 +2,32 @@
 
 const FAQS = [
   {
-    q: 'Qual tecnologia está por trás da plataforma CertBlocker?',
-    a: 'O CertBlocker é desenvolvido sobre a tecnologia da TrustPanel, plataforma especializada em gestão de certificados digitais. A emissão dos certificados A1 é realizada pela Infocomex, Autoridade Certificadora credenciada pelo SERPRO desde 2010, parte da cadeia ICP-Brasil. O CertBlocker concentra cofre, alertas, auditoria e integrações; a Infocomex garante a emissão com plena validade jurídica.',
+    q: 'O que é a CertBlocker?',
+    a: 'A CertBlocker é uma plataforma corporativa de gestão de certificados digitais A1. Ela centraliza seus certificados em um cofre criptografado, com alertas de vencimento, controle de acesso por usuário e grupo e trilha de auditoria. A emissão dos certificados A1 é feita pela Infocomex, Autoridade Certificadora credenciada pelo SERPRO desde 2010, parte da cadeia ICP-Brasil.',
   },
   {
-    q: 'Minha carteira de certificados está protegida dentro da plataforma?',
-    a: 'Sim. A plataforma realiza apenas a leitura dos certificados A1 em ambiente criptografado AES-256, o mesmo padrão usado por bancos e instituições financeiras. O arquivo e a senha nunca são enviados nem armazenados em nossos servidores, e os certificados também nunca são baixados na máquina do colaborador. Toda operação acontece com rastreabilidade ponta-a-ponta.',
+    q: 'Meus certificados ficam seguros na plataforma?',
+    a: 'Sim. A plataforma realiza apenas a leitura dos certificados A1 em ambiente criptografado AES-256, o mesmo padrão usado por bancos. O arquivo e a senha nunca são armazenados em nossos servidores, e o certificado nunca é baixado na máquina do colaborador. Toda operação acontece com rastreabilidade ponta-a-ponta.',
   },
   {
-    q: 'Como é feito o controle de quem pode usar cada certificado?',
-    a: 'Você organiza seus colaboradores em grupos por área (Fiscal, Financeiro, Jurídico, Compras etc.) e define quais certificados cada grupo pode visualizar e utilizar. O acesso segue o princípio do menor privilégio: ninguém vê nem usa certificados fora do seu grupo. Alterações de permissão ficam registradas na trilha de auditoria.',
+    q: 'Como funciona o controle de acesso por grupos?',
+    a: 'Você organiza seus colaboradores em grupos por área (Fiscal, Financeiro, Jurídico, Compras etc.) e define quais certificados cada grupo pode visualizar e utilizar. O acesso segue o princípio do menor privilégio, e toda alteração de permissão fica registrada na trilha de auditoria.',
   },
   {
-    q: 'A plataforma é compatível com Windows?',
-    a: 'Sim, é compatível com Windows. Não há suporte a macOS ou Linux neste momento.',
-  },
-  {
-    q: 'O CertBlocker está adequado à LGPD?',
-    a: 'Sim. O CertBlocker foi desenvolvido em total conformidade com a Lei Geral de Proteção de Dados. Todos os dados são tratados com segurança, transparência e respeito à privacidade dos usuários, com contratos e DPAs disponíveis sob demanda.',
+    q: 'Funciona no Windows?',
+    a: 'Sim. O aplicativo corporativo é compatível com Windows. Não há suporte a macOS ou Linux neste momento.',
   },
 ];
 
 const FAQ = () => {
-  const [open, setOpen] = React.useState(0);
+  const [open, setOpen] = React.useState(3);
   return (
-    <section className="block product" id="faq">
-      <div className="container">
-        <div className="section-head">
-          <div className="kicker">Perguntas frequentes</div>
-          <h2>Tudo o que você precisa saber.</h2>
+    <section className="block faq-section" id="faq">
+      <div className="container faq-layout">
+        <div className="faq-intro">
+          <div className="kicker-gold">— PERGUNTAS FREQUENTES</div>
+          <h2>Tudo o que você precisa saber antes de decidir.</h2>
+          <p>Respostas diretas para as dúvidas mais comuns de diretores de TI, controladores e gestores fiscais.</p>
         </div>
         <div className="faq-wrap">
           {FAQS.map((f, i) => (
@@ -56,7 +53,6 @@ const CONTACT = {
   emailNote: 'Resposta em até 2h úteis',
   whatsapp: '(66) 99262-3898',
   whatsappNote: 'Atendimento dedicado',
-  hours: 'Segunda a Sexta, 8h às 18h (Brasília)',
 };
 
 const ContactSection = () => {
@@ -70,9 +66,9 @@ const ContactSection = () => {
         <div className="contact-grid">
           {/* Coluna esquerda, convite + contatos */}
           <div className="contact-intro">
-            <div className="kicker">Contato comercial</div>
-            <h2 className="text-balance">Vamos transformar a gestão de A1 da sua empresa.</h2>
-            <p>Fale com nosso time e veja em 20 minutos como reduzir risco operacional, eliminar multas e devolver tempo para TI, Contabilidade e Jurídico.</p>
+            <div className="kicker-gold">— Contato comercial</div>
+            <h2 className="text-balance">Transforme a gestão de certificados da sua empresa.</h2>
+            <p>Fale com nossa equipe e descubra em 30 minutos como reduzir risco operacional, eliminar multas e devolver tempo para o seu time.</p>
 
             <div className="contact-cards">
               <div className="contact-card">
@@ -89,13 +85,6 @@ const ContactSection = () => {
                   <h4>WhatsApp comercial</h4>
                   <span className="contact-card-value">{CONTACT.whatsapp}</span>
                   <span className="contact-card-sub">{CONTACT.whatsappNote}</span>
-                </div>
-              </div>
-              <div className="contact-card">
-                <div className="contact-card-icn"><I.clock/></div>
-                <div className="contact-card-body">
-                  <h4>Horário institucional</h4>
-                  <span className="contact-card-value">{CONTACT.hours}</span>
                 </div>
               </div>
             </div>
@@ -124,8 +113,8 @@ const ContactSection = () => {
                 <textarea id="cf-msg" rows={4} placeholder="Conte-nos sobre o contexto da sua empresa..."/>
               </div>
 
-              <button type="submit" className="btn btn-royal btn-lg contact-submit">
-                Solicitar demonstração <I.arrow size={14}/>
+              <button type="submit" className="btn btn-primary btn-lg contact-submit">
+                Enviar via WhatsApp <I.arrow size={14}/>
               </button>
             </form>
 
@@ -144,36 +133,36 @@ const Footer = () => (
     <div className="container">
       <div className="foot-grid">
         <div>
-          <a href="#" className="brand">
-            <Logo size={56}/>
-          </a>
-          <p className="foot-intro">Gestão inteligente de certificados digitais A1, operada pela <a href="https://infocomex.com.br" target="_blank" rel="noopener" style={{color: 'var(--royal-600)', fontWeight: 600}}>Infocomex</a>, Autoridade Certificadora credenciada SERPRO desde 2010, sob a cadeia ICP-Brasil.</p>
+          <p className="foot-intro">A plataforma corporativa mais confiável para gerenciamento de certificados digitais A1 no Brasil.</p>
         </div>
         <div>
-          <h5>Navegação</h5>
+          <h5>Produto</h5>
           <ul>
-            <li><a href="#produto">Produto</a></li>
+            <li><a href="#recursos">Recursos</a></li>
             <li><a href="#como-funciona">Como funciona</a></li>
-            <li><a href="#infocomex">Infocomex</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
         <div>
-          <h5>Grupo Infocomex</h5>
+          <h5>Empresa</h5>
           <ul>
-            <li><a href="https://infocomex.com.br" target="_blank" rel="noopener">Infocomex.com.br ↗</a></li>
-            <li><a href="https://infocomex.com.br/comprar" target="_blank" rel="noopener">Loja de certificados</a></li>
-            <li><a href="https://infocomex.com.br/especiais/nossas-unidades" target="_blank" rel="noopener">Unidades SC</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#infocomex">Parceiros</a></li>
+            <li><a href="#">Imprensa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">LGPD</a></li>
           </ul>
         </div>
       </div>
       <div className="foot-bottom">
-        <div>© 2026 CertBlocker, Todos os direitos reservados</div>
-        <div style={{display: 'flex', gap: 18}}>
-          <a href="#">Privacidade</a>
-          <a href="#">Termos</a>
-          <a href="#">Cookies</a>
-        </div>
+        <div>© 2026 CERTBLOCKER. TODOS OS DIREITOS RESERVADOS.</div>
+        <div>@CERTBLOCKER</div>
       </div>
     </div>
   </footer>
