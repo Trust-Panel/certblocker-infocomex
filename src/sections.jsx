@@ -117,102 +117,40 @@ const Platform = () => (
   </section>
 );
 
+const RECURSOS = [
+  { n: '01', cat: 'ALERTAS', icon: 'clock', title: 'Alertas de vencimento e prazos de renovação',
+    desc: 'Notificações automáticas enviadas com antecedência configurável. Seu time renova no momento exato, nunca antes, nunca tarde demais.',
+    bullets: ['Alertas personalizáveis por período (30/15/7 dias)', 'Notificações via e-mail', 'Dashboard consolidado com linha do tempo'] },
+  { n: '02', cat: 'SEGURANÇA', icon: 'lock', title: 'Uso seguro sem armazenamento local',
+    desc: 'O certificado nunca é baixado na máquina do colaborador. Toda operação acontece em ambiente isolado na nuvem, com rastreabilidade ponta-a-ponta.',
+    bullets: ['Zero arquivos locais na máquina do usuário', 'Execução direta via app autenticado', 'Eliminação completa de risco de cópia'] },
+  { n: '03', cat: 'GOVERNANÇA', icon: 'users', title: 'Permissões por usuário e por grupo',
+    desc: 'Controle granular com princípio de menor privilégio. Defina quem pode ver, usar e gerenciar cada certificado por departamento, cargo ou projeto.',
+    bullets: ['Grupos por área (Fiscal, Financeiro, Compras)', 'Níveis de acesso totalmente customizáveis'] },
+  { n: '04', cat: 'AUDITORIA', icon: 'doc', title: 'Logs completos e restrição de acesso',
+    desc: 'Cada ação é registrada com identidade, timestamp e contexto. Você sabe quem acessou, de onde, quando e para qual finalidade.',
+    bullets: ['Trilha de auditoria imutável'] },
+];
 const Features = () => (
-  <section className="block" id="produto">
+  <section className="block recursos" id="recursos">
     <div className="container">
-      <div className="section-head">
-        <div className="kicker">Plataforma</div>
-        <h2>Tudo o que sua empresa precisa para gerenciar certificados A1, em um único lugar.</h2>
-        <p>Acabe com o controle por planilha e e-mails perdidos. O CertBloker concentra cofre seguro, alertas de vencimento, controle de acesso granular e auditoria imutável, em uma única plataforma corporativa pronta para TI, Contabilidade e Jurídico.</p>
+      <div className="recursos-head">
+        <div className="kicker-blue">RECURSOS PRINCIPAIS</div>
+        <h2>Tudo que os seus departamentos de TI, Contabilidade e Jurídico precisam.</h2>
+        <p>Infraestrutura projetada para empresas que não podem parar por causa de um certificado vencido ou vazado.</p>
       </div>
-
-      <div className="features-grid">
-        {/* Alertas */}
-        <div className="feat-card dark">
-          <div className="feat-icn"><I.bell/></div>
-          <h3 className="feat-title">Alertas inteligentes de vencimento</h3>
-          <p className="feat-desc">Notificações automáticas por e-mail com prazo configurável (D-30, D-15 e D-7). Dashboard consolidado com linha do tempo, seu time renova no momento certo, nunca antes, nunca depois.</p>
-          <div className="feat-visual">
-            <div className="feat-visual-title">Painel de alertas</div>
-            <div className="feat-alert-row">
-              <span className="alert-dot" style={{background:'#f59e0b'}}/>
-              <span className="alert-badge" style={{background:'rgba(245,158,11,0.18)',color:'#fbbf24'}}>D-30</span>
-              <span className="alert-text">Mendes Contábil, alerta a Maria L.</span>
-            </div>
-            <div className="feat-alert-row">
-              <span className="alert-dot" style={{background:'#ef4444'}}/>
-              <span className="alert-badge" style={{background:'rgba(239,68,68,0.18)',color:'#f87171'}}>D-7</span>
-              <span className="alert-text">Pereira Log, alerta a 3 destinatários</span>
-            </div>
-            <div className="feat-alert-row">
-              <span className="alert-dot" style={{background:'#10b981'}}/>
-              <span className="alert-badge" style={{background:'rgba(16,185,129,0.18)',color:'#34d399'}}>OK</span>
-              <span className="alert-text">Aurora Construtora, em dia</span>
-            </div>
+      <div className="recursos-grid">
+        {RECURSOS.map((r) => (
+          <div className="recurso" key={r.n}>
+            <div className="recurso-icn">{I[r.icon]({size:24})}</div>
+            <div className="recurso-cat">{r.n} — {r.cat}</div>
+            <h3>{r.title}</h3>
+            <p>{r.desc}</p>
+            <ul className="recurso-bullets">
+              {r.bullets.map((b, i) => <li key={i}>{b}</li>)}
+            </ul>
           </div>
-        </div>
-
-        {/* Sem download */}
-        <div className="feat-card dark">
-          <div className="feat-icn"><I.shield/></div>
-          <h3 className="feat-title">Sem download no dispositivo</h3>
-          <p className="feat-desc">O certificado nunca é baixado para o computador do usuário. Toda operação acontece em ambiente cloud isolado, com rastreabilidade de ponta a ponta, zero risco de arquivo .pfx solto.</p>
-          <div className="feat-visual">
-            <div className="feat-visual-title">Segurança do cofre</div>
-            <div className="feat-alert-row">
-              <span className="alert-dot" style={{background:'#10b981'}}/>
-              <span className="alert-text">Cofre cloud isolado</span>
-              <span className="feat-chip ok">AES-256</span>
-            </div>
-            <div className="feat-alert-row">
-              <span className="alert-dot" style={{background:'#10b981'}}/>
-              <span className="alert-text">Arquivos .pfx no dispositivo</span>
-              <span className="feat-chip ok">0</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Multiempresa */}
-        <div className="feat-card dark">
-          <div className="feat-icn"><I.users/></div>
-          <h3 className="feat-title">Multiempresa &amp; multiusuário</h3>
-          <p className="feat-desc">Organize grupos por área (Fiscal, Financeiro, Jurídico, Compras) e defina exatamente quais certificados cada grupo pode acessar. Princípio do menor privilégio aplicado por padrão.</p>
-          <div className="feat-visual">
-            <div className="feat-visual-title">Grupos de acesso</div>
-            <div className="feat-chips">
-              <span className="feat-chip">Fiscal</span>
-              <span className="feat-chip">Financeiro</span>
-              <span className="feat-chip">Jurídico</span>
-              <span className="feat-chip">Compras</span>
-              <span className="feat-chip ghost">+ grupos</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Auditoria */}
-        <div className="feat-card dark">
-          <div className="feat-icn"><I.chart/></div>
-          <h3 className="feat-title">Auditoria &amp; relatórios</h3>
-          <p className="feat-desc">Registro completo de quem acessou qual site, quando e se o acesso foi liberado ou bloqueado. Exporte relatórios prontos para LGPD, conformidade e auditoria interna.</p>
-          <div className="feat-visual">
-            <div className="feat-visual-title">Log de acessos</div>
-            <div className="feat-alert-row">
-              <span className="feat-act allowed">Liberado</span>
-              <span className="alert-text">Maria L. · ECAC</span>
-              <span className="feat-time">14:32</span>
-            </div>
-            <div className="feat-alert-row">
-              <span className="feat-act allowed">Liberado</span>
-              <span className="alert-text">João P. · Siscomex</span>
-              <span className="feat-time">09:10</span>
-            </div>
-            <div className="feat-alert-row">
-              <span className="feat-act blocked">Não liberado</span>
-              <span className="alert-text">Pedro S. · ECAC</span>
-              <span className="feat-time">ontem</span>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   </section>

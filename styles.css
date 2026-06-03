@@ -638,6 +638,19 @@ h1.hero-title .strike::after {
 .plat-card h3 { font-family: var(--font-display); font-weight: 600; font-size: 21px; color: #fff; margin: 0 0 10px; }
 .plat-card p { color: var(--ink-700); font-size: 14.5px; line-height: 1.6; margin: 0; }
 
+/* ---------- RECURSOS PRINCIPAIS ---------- */
+.recursos-head { max-width: 760px; margin: 0 0 64px; }
+.recursos-head h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 3.6vw, 52px); line-height: 1.08; color: #fff; margin: 0 0 20px; letter-spacing: -0.02em; }
+.recursos-head p { color: var(--ink-600); font-size: 17px; line-height: 1.6; margin: 0; max-width: 620px; }
+.recursos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px 72px; }
+.recurso-icn { color: var(--royal-400); margin-bottom: 28px; }
+.recurso-cat { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-500); margin-bottom: 14px; }
+.recurso h3 { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: #fff; margin: 0 0 14px; }
+.recurso p { color: var(--ink-700); font-size: 15px; line-height: 1.65; margin: 0 0 18px; }
+.recurso-bullets { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.recurso-bullets li { position: relative; padding-left: 18px; color: var(--ink-600); font-size: 14px; }
+.recurso-bullets li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--royal-500); }
+
 /* ---------- Section general ---------- */
 section.block { padding: 96px 0; position: relative; }
 .section-head { max-width: 720px; margin: 0 auto 56px; text-align: center; }
