@@ -1,7 +1,7 @@
-// Header + Hero with dashboard mock
+// Header + Hero
 
-const Logo = ({size=40}) => (
-  <img src="assets/certbloker-logo.png" alt="CertBlocker" style={{height: size, width: 'auto', display: 'block'}} />
+const Logo = () => (
+  <img className="brand-logo" src="assets/certbloker-logo.png" alt="CertBlocker" />
 );
 
 const NAV = [
@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header className="nav">
       <div className="container nav-inner">
-        <a href="#" className="brand" onClick={close}><Logo size={72}/></a>
+        <a href="#" className="brand" onClick={close}><Logo/></a>
         <nav className="nav-links">
           {NAV.map(n => <a key={n.href} className="nav-link" href={n.href}>{n.label}</a>)}
         </nav>
