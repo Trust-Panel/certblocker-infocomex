@@ -258,7 +258,7 @@ h1.hero-title .accent { color: var(--royal-400); }
 .powered-grid h2 {
   font-family: var(--font-display);
   font-size: clamp(28px, 3vw, 38px); line-height: 1.12;
-  letter-spacing: -0.02em; color: var(--navy-900);
+  letter-spacing: -0.02em; color: #eef2ff;
   margin: 12px 0 16px; font-weight: 600;
 }
 .powered-grid p { color: var(--ink-700); font-size: 16px; margin: 0 0 24px; line-height: 1.6; max-width: 520px; }
@@ -272,7 +272,7 @@ h1.hero-title .accent { color: var(--royal-400); }
 }
 .powered-stat .num {
   font-family: var(--font-display); font-size: 28px; font-weight: 600;
-  color: var(--navy-900); letter-spacing: -0.02em; line-height: 1;
+  color: #eef2ff; letter-spacing: -0.02em; line-height: 1;
 }
 .powered-stat .lbl {
   font-size: 12px; color: var(--ink-500); margin-top: 6px; line-height: 1.4;
