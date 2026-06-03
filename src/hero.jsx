@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header className="nav">
       <div className="container nav-inner">
-        <a href="#" className="brand" onClick={close}><Logo size={52}/></a>
+        <a href="#" className="brand" onClick={close}><Logo size={60}/></a>
         <nav className="nav-links">
           {NAV.map(n => <a key={n.href} className="nav-link" href={n.href}>{n.label}</a>)}
         </nav>
