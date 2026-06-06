@@ -49,9 +49,9 @@ const FAQ = () => {
 
 // Dados de contato, edite aqui para atualizar os cards da seção.
 const CONTACT = {
-  email: 'comercial@certbloker.com.br',
+  email: 'contato@infocomex.com.br',
   emailNote: 'Resposta em até 2h úteis',
-  whatsapp: '(66) 99262-3898',
+  whatsapp: '+55 0800 047 1347',
   whatsappNote: 'Atendimento dedicado',
 };
 
