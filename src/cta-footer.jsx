@@ -154,8 +154,8 @@ const Footer = () => (
         <div>
           <h5>Legal</h5>
           <ul>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+            <li><a href="termos-de-uso.html">Termos de Uso</a></li>
             <li><a href="#">LGPD</a></li>
           </ul>
         </div>
