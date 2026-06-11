@@ -56,9 +56,20 @@ const CONTACT = {
 };
 
 const ContactSection = () => {
-  // Somente visual por enquanto. Para ligar ao WhatsApp/backend depois,
-  // troque o preventDefault por um window.open(`https://wa.me/55...`) ou um POST.
-  const handleSubmit = (e) => { e.preventDefault(); };
+  const [form, setForm] = React.useState({ empresa: '', nome: '', email: '', msg: '' });
+
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const text =
+      `*Solicitação de demonstração — CertBlocker*\n\n` +
+      `*Empresa:* ${form.empresa}\n` +
+      `*Nome:* ${form.nome}\n` +
+      `*E-mail:* ${form.email}\n` +
+      `*Mensagem:* ${form.msg}`;
+    window.open(`https://wa.me/5508000471347?text=${encodeURIComponent(text)}`, '_blank');
+  };
 
   return (
     <section className="block contact" id="contato">
@@ -90,7 +101,7 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Coluna direita, card de formulário (visual) */}
+          {/* Coluna direita, card de formulário */}
           <div className="contact-form">
             <h3>Solicite uma demonstração</h3>
             <p className="contact-form-sub">Preencha e retornaremos em até 2 horas úteis.</p>
@@ -98,19 +109,19 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit}>
               <div className="field">
                 <label htmlFor="cf-empresa">Empresa</label>
-                <input id="cf-empresa" type="text" placeholder="Razão social"/>
+                <input id="cf-empresa" name="empresa" type="text" placeholder="Razão social" value={form.empresa} onChange={handleChange} required/>
               </div>
               <div className="field">
                 <label htmlFor="cf-nome">Nome completo</label>
-                <input id="cf-nome" type="text" placeholder="Seu nome"/>
+                <input id="cf-nome" name="nome" type="text" placeholder="Seu nome" value={form.nome} onChange={handleChange} required/>
               </div>
               <div className="field">
                 <label htmlFor="cf-email">E-mail corporativo</label>
-                <input id="cf-email" type="email" placeholder="nome@empresa.com.br"/>
+                <input id="cf-email" name="email" type="email" placeholder="nome@empresa.com.br" value={form.email} onChange={handleChange} required/>
               </div>
               <div className="field">
                 <label htmlFor="cf-msg">Mensagem</label>
-                <textarea id="cf-msg" rows={4} placeholder="Conte-nos sobre o contexto da sua empresa..."/>
+                <textarea id="cf-msg" name="msg" rows={4} placeholder="Conte-nos sobre o contexto da sua empresa..." value={form.msg} onChange={handleChange}/>
               </div>
 
               <button type="submit" className="btn btn-primary btn-lg contact-submit">
