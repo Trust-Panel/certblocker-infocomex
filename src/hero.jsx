@@ -57,7 +57,7 @@ const Hero = () => (
           Segurança institucional na gestão dos seus <span className="accent">certificados digitais.</span>
         </h1>
         <p className="hero-sub">
-          A CertBlocker automatiza 100% do ciclo de vida dos certificados A1 da sua empresa, com criptografia bancária, alertas antecipados e controle granular de acesso. Zero certificados vencidos. Zero riscos operacionais.
+          Guarda centralizada de certificados A1, com monitoramento e controle de acesso aos sites, por colaborador, conforme políticas definidas pelos gestores. Proteja-se do uso indevido, sem comprometer a fluidez da sua empresa ou escritório contábil.
         </p>
         <div className="hero-actions">
           <a href="#contato" className="btn btn-primary btn-lg">Agendar Demonstração <I.arrow size={14}/></a>
