@@ -75,10 +75,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .nav-inner {
   display: flex; align-items: center; justify-content: space-between;
-  height: 96px;
+  height: 112px;
 }
 .brand { display: flex; align-items: center; gap: 10px; }
-.brand-logo { height: 84px; width: auto; display: block; }
+.brand-logo { height: 108px; width: auto; display: block; }
 
 .nav-links { display: flex; gap: 4px; align-items: center; }
 .nav-link {
