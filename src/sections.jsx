@@ -102,7 +102,7 @@ const Platform = () => (
           <div className="dots"><span/><span/><span/></div>
           <div className="browser-url"><I.lock size={11}/> certbloker.com.br/dashboard</div>
         </div>
-        <img className="browser-shot" src="assets/dashboard.jpeg" alt="Dashboard do CertBlocker com status, certificados e validade"/>
+        <img className="browser-shot" src="assets/dashboard.jpg" alt="Dashboard do CertBlocker com status, certificados e validade"/>
       </div>
       <div className="plat-cards">
         {PLAT_CARDS.map((c, i) => (
